@@ -1,0 +1,82 @@
+.background,
+.picture {
+	background: $background-tertiary;
+}
+
+.background {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	img,
+	video,
+	canvas {
+		position: relative;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	@media screen {
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+		}
+	}
+
+	@media print {
+		background: none;
+
+		img,
+		video,
+		canvas {
+			display: none;
+		}
+
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+
+}
+
+.background--relative {
+	position: relative;
+
+	&:after {
+		display: none;
+	}
+}
+
+.background--positive {
+	&:after {
+		background: rgba(255, 255, 255, 0.5);
+	}
+}
+
+.picture {
+	font-size: 0;
+	line-height: 0;
+
+	.section--negative & {
+		box-shadow: 0 30px 50px -10px rgba(0, 0, 0, 0.4);
+	}
+
+	img {
+		width: 100%;
+		backface-visibility: hidden;
+	}
+}
+
+[parallax] {
+	overflow: hidden;
+}

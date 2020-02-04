@@ -1,0 +1,151 @@
+.section--footer {
+	background: $background-secondary;
+	padding: 60px 0 60px 0;
+	font-size: 14px;
+	line-height: 2;
+
+	b {
+		font-family: $font-primary;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+}
+
+.nav--colophon {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+.btn--social {
+	@extend %btn;
+
+	.icon {
+		fill: $foreground;
+	}
+}
+
+.group--social {
+	display: flex;
+	align-items: center;
+
+	&>.btn--social+.btn--social {
+		margin-left: 20px;
+	}
+}
+
+.btn--brand {
+	@extend %btn;
+	font-size: 18px;
+	font-weight: $font-semibold;
+	font-family: $font-primary;
+	text-transform: uppercase;
+}
+
+.border-bottom {
+	border-bottom: 1px solid rgba(#16255b, 0.15);
+	margin-bottom: 20px;
+}
+
+.flex--row {
+	@include media-breakpoint-up(md) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		&.flex__item {
+			flex: 1 1 20%;
+		}
+
+		&>.flex__item+.flex__item {
+			margin-left: 15px;
+		}
+	}
+}
+
+.nav--footer {
+	@extend %nav-vertical;
+	margin-bottom: 15px;
+
+	&>li {
+
+		&>a,
+		&>span {
+			display: block;
+			font-size: 14px;
+			line-height: 1;
+			padding: 4px;
+			margin-left: -4px;
+			margin-bottom: 5px;
+
+			color: $foreground;
+			cursor: pointer;
+
+			&:hover,
+			&.active {
+				background: $foreground;
+				color: $foreground-negative;
+			}
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	@include media-breakpoint-down(sm) {
+		display: block;
+		// margin-bottom: 100px;
+	}
+}
+
+.nav--credits {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 30px;
+}
+
+.nav--footer-horizontal {
+	@extend %nav;
+
+	.icon--websolute {
+		margin-left: 10px;
+		fill: $foreground;
+	}
+
+	&>li {
+
+		&>a,
+		&>span {
+			display: flex;
+			align-items: center;
+			font-size: 14px;
+			line-height: 2;
+			padding: 0 4px;
+			margin-left: 30px;
+			color: $foreground;
+			cursor: pointer;
+		}
+
+		&:hover,
+		&.active {
+
+			&>a,
+			&>span {
+				background: $foreground;
+				color: $foreground-negative;
+			}
+
+			.icon--websolute {
+				fill: $foreground-negative;
+			}
+		}
+	}
+
+}
