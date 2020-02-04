@@ -15,6 +15,12 @@ body {
 
 	@include scrollbar();
 
+	&.o-scroll {
+		box-sizing: border-box;
+		overflow: hidden;
+		width: 100vw;
+	}
+
 }
 
 [unselectable] {
@@ -52,4 +58,23 @@ body {
 			box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2);
 		}
 	}
+}
+
+.c-scrollbar {
+    width: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    transform-origin: center right;
+    transform: scaleX(1);
+    transition: transform .2s linear;
+}
+
+.c-scrollbar_thumb {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }

@@ -65,12 +65,11 @@
 
 	.title {
 		font-family: $font-primary;
-		font-size: 70px;
-		line-height: 60px;
-		font-weight: $font-medium;
+		font-size: 80px;
+		line-height: 80px;
+		font-weight: $font-regular;
 		margin-bottom: 15px;
 		color: $foreground-negative;
-		text-transform: uppercase;
 
 		small {
 			font-size: 50px;
@@ -78,9 +77,9 @@
 	}
 
 	.abstract {
-		font-size: 22px;
-		line-height: 31px;
-		font-weight: $font-light;
+		font-size: 18px;
+		line-height: 32px;
+		font-weight: $font-regular;
 		color: $foreground-negative;
 		max-width: 960px;
 	}
@@ -108,11 +107,17 @@
 	@extend %section--hero-title;
 
 	@include media-breakpoint-up(md) {
-		height: 770px;
+		height: 100vh;
 	}
 
 	@include media-breakpoint-down(sm) {
 		height: 70vh;
+	}
+
+	.caption {
+		position: absolute;
+		left: 80px;
+		bottom: 80px;
 	}
 }
 

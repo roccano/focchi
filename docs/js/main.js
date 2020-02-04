@@ -4,11 +4,17 @@
  * License: MIT
  */
 
-(function (factory) {
-	typeof define === 'function' && define.amd ? define('main', factory) :
-	factory();
-}((function () { 'use strict';
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('locomotive-scroll')) :
+    typeof define === 'function' && define.amd ? define('main', ['locomotive-scroll'], factory) :
+    (global = global || self, factory(global.LocomotiveScroll));
+}(this, (function (LocomotiveScroll) { 'use strict';
 
-	console.log('hello');
+    LocomotiveScroll = LocomotiveScroll && LocomotiveScroll.hasOwnProperty('default') ? LocomotiveScroll['default'] : LocomotiveScroll;
+
+    var scroll = new LocomotiveScroll({
+      el: document.querySelector('#js-scroll'),
+      smooth: true
+    });
 
 })));
