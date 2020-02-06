@@ -12,10 +12,23 @@
 
   LocomotiveScroll = LocomotiveScroll && LocomotiveScroll.hasOwnProperty('default') ? LocomotiveScroll['default'] : LocomotiveScroll;
 
-  var scroll = new LocomotiveScroll({
-    el: document.querySelector('#js-scroll'),
-    smooth: false
-  });
+  (function () {
+    document.documentElement.classList.add('is-loaded');
+    document.documentElement.classList.remove('is-loading');
+    setTimeout(function () {
+      document.documentElement.classList.add('is-ready');
+    }, 300);
+    setTimeout(function () {
+      var scroll = new LocomotiveScroll({
+        el: document.querySelector('#js-scroll'),
+        smooth: true,
+        getSpeed: true,
+        getDirection: true,
+        useKeyboard: true
+      });
+    }, 1000);
+  })();
+
   $(document).ready(function () {
     $('.slide-live-project').slick({
       centerMode: true,
