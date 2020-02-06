@@ -3621,13 +3621,13 @@ ul {
 
 .section--full-img {
   padding: 80px 0;
-  background: url("/focchi/img/stripes.png") #FFF;
+  background: url("a/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover; }
 
 .section--two-img {
   padding: 80px 0;
-  background: url("/focchi/img/stripes.png") #FFF;
+  background: url("a/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover; }
   .section--two-img .row .col-md-6 {
@@ -3640,7 +3640,7 @@ ul {
 
 .section--two-text {
   padding: 80px 0;
-  background: url("/focchi/img/stripes.png") #FFF;
+  background: url("a/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover; }
   .section--two-text .text-box {
@@ -3657,7 +3657,7 @@ ul {
 
 .section--full-text {
   padding: 80px 0;
-  background: url("/focchi/img/stripes.png") #FFF;
+  background: url("a/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover; }
   .section--full-text .text-box {
@@ -4851,7 +4851,7 @@ ul {
 
 .section--project-spec {
   padding: 80px 0;
-  background: url("/focchi/img/stripes.png");
+  background: url("a/focchi/img/stripes.png");
   background-position: center;
   background-size: cover; }
   .section--project-spec .title {
@@ -4870,7 +4870,7 @@ ul {
 
 .section--project-2-img {
   padding: 150px 0;
-  background: url("/focchi/img/stripes.png");
+  background: url("a/focchi/img/stripes.png");
   background-position: center;
   background-size: cover; }
   .section--project-2-img .row {
@@ -4892,7 +4892,7 @@ ul {
 .section--project-technology {
   padding: 300px 0;
   margin-top: -300px;
-  background: url("/focchi/img/stripes.png") #E9E9E9;
+  background: url("a/focchi/img/stripes.png") #E9E9E9;
   background-position: center;
   background-size: cover; }
   .section--project-technology .row {
@@ -4913,7 +4913,7 @@ ul {
 
 .section--project-process {
   padding: 0px 0 150px;
-  background: url("/focchi/img/stripes.png") #BEBEBF;
+  background: url("a/focchi/img/stripes.png") #BEBEBF;
   background-position: center;
   background-size: cover; }
   .section--project-process .full-width {
@@ -4932,7 +4932,7 @@ ul {
       color: #fff; }
 
 .section--project-designer {
-  background: url("/focchi/img/stripes.png") #BEBEBF;
+  background: url("a/focchi/img/stripes.png") #BEBEBF;
   background-position: center;
   background-size: cover;
   padding: 0 0 150px; }
@@ -4947,7 +4947,7 @@ ul {
       color: #E3E3E3; }
 
 .section--project-live-project {
-  background: url("/focchi/img/stripes.png") #FFF;
+  background: url("a/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover;
   padding: 150px 0; }
@@ -4973,13 +4973,13 @@ ul {
       color: #28292B; }
 
 .section--project-other {
-  background: url("/focchi/img/stripes.png") #FFF;
+  background: url("a/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover;
   padding: 150px 0 0; }
 
 .section--more-projects {
-  background: url("/focchi/img/stripes.png") #BEBEBF;
+  background: url("a/focchi/img/stripes.png") #BEBEBF;
   background-position: center;
   background-size: cover;
   padding: 150px 0; }
