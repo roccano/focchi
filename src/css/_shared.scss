@@ -1,11 +1,9 @@
-@import 'fonts';
 @import 'mixins';
 
 @import '_components/reset';
 @import '_components/base';
 @import '_components/typography';
 @import '_components/buttons';
-@import '_components/forms';
 @import '_components/grid';
 @import '_components/svg';
 
@@ -14,20 +12,20 @@
 @import '_components/pictures';
 @import '_components/hero';
 @import '_components/navs';
-@import '_components/swiper';
 @import '_components/media';
+@import '_components/full-image';
+@import '_components/two-image';
+@import '_components/two-text';
+@import '_components/full-text';
 
 @import '_components/cards';
 
 @import '_components/responsive';
 
 @import '_pages/header';
-@import '_pages/club';
 @import '_pages/footer';
 @import '_pages/listing';
-@import '_pages/index';
 @import '_pages/products';
-@import '_pages/technician';
 @import '_pages/contact-us';
 @import '_pages/work-with-us';
 @import '_pages/detail-project';

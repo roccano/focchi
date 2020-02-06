@@ -1,5 +1,8 @@
 .section--project-spec {
 	padding: 80px 0;
+	background: url('/focchi/img/stripes.png');
+	background-position: center;
+	background-size: cover;
 
 	.title {
 		color: $dark;
@@ -22,15 +25,169 @@
 }
 
 .section--project-2-img {
+	padding: 150px 0;
+	background: url('/focchi/img/stripes.png');
+	background-position: center;
+	background-size: cover;
 
 	.row {
 		align-items: flex-end;
+
+		.col-md-6 {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 }
 
 .section--project-technology {
-	padding: 80px 0;
-	background: #E9E9E9;
+	padding: 300px 0;
+	margin-top: -300px;
+	background: url('/focchi/img/stripes.png') #E9E9E9;
+	background-position: center;
+	background-size: cover;
+
+	.row {
+		align-items: center;	
+	}
+
+	.text-box {
+		margin-bottom: 100px;
+		color: $dark;
+		font-size: 18px;
+
+		a {
+			color: $dark;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.text {
+			color: $grey;
+			padding: 20px 0;
+		}
+	}
+}
+
+.section--project-process {
+	padding: 0px 0 150px;
+	background: url('/focchi/img/stripes.png') #BEBEBF;
+	background-position: center;
+	background-size: cover;
+
+	.full-width {
+		display: flex;
+		justify-content: center;
+		margin-top: -150px;
+		margin-bottom: 150px;
+	}
+
+	.process-features {
+		color: #E3E3E3;
+		font-size: 28px;
+
+		span {
+			color: #fff;
+		}
+	}
+}
+
+.section--project-designer {
+	background: url('/focchi/img/stripes.png') #BEBEBF;
+	background-position: center;
+	background-size: cover;
+	padding: 0 0 150px;
+
+	.row {
+		align-items: center;	
+	}
+
+	.designer {
+
+		.text {
+			color: #FFF;
+			font-size: 28px;
+
+			span {
+				color: #E3E3E3;
+			}
+		}
+	}
+}
+
+.section--project-live-project {
+	background: url('/focchi/img/stripes.png') #FFF;
+	background-position: center;
+	background-size: cover;
+	padding: 150px 0;
+
+	.slide-live-project {
+		padding: 100px 0;
+
+		.item {
+			padding: 0 30px;
+			outline: none;
+			box-shadow: none;
+
+			img {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+
+	.text {
+		font-size: 36px;
+		color: #707070;
+
+		span {
+			color: $dark;
+		}
+	}
+	
+	.small-text {
+		font-size: 18px;
+		color: #707070;
+
+		span {
+			color: $dark;
+		}
+	}
+}
+
+.section--project-other {
+	background: url('/focchi/img/stripes.png') #FFF;
+	background-position: center;
+	background-size: cover;
+	padding: 150px 0 0;	
+}
+
+.section--more-projects {
+	background: url('/focchi/img/stripes.png') #BEBEBF;
+	background-position: center;
+	background-size: cover;
+	padding: 150px 0;
+
+	.row {
+		align-items: flex-end;
+	}
+
+	.cta {
+		text-align: right;
+	}
+
+	.more-projects {
+		padding-top: 100px;
+
+		.text {
+			padding-top: 50px;
+			color: #fff;
+			font-size: 28px;
+		}
+	}
 }
 
 
@@ -44,4 +201,14 @@
 
 @include media-breakpoint-down(xs) {
 
+}
+
+.tit-section {
+	color: $dark;
+	font-size: 48px;
+	font-weight: 400;
+
+	&.light {
+		color: #fff;
+	}
 }

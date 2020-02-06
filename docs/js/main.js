@@ -5,16 +5,24 @@
  */
 
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('locomotive-scroll')) :
-    typeof define === 'function' && define.amd ? define('main', ['locomotive-scroll'], factory) :
-    (global = global || self, factory(global.LocomotiveScroll));
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('locomotive-scroll')) :
+  typeof define === 'function' && define.amd ? define('main', ['locomotive-scroll'], factory) :
+  (global = global || self, factory(global.LocomotiveScroll));
 }(this, (function (LocomotiveScroll) { 'use strict';
 
-    LocomotiveScroll = LocomotiveScroll && LocomotiveScroll.hasOwnProperty('default') ? LocomotiveScroll['default'] : LocomotiveScroll;
+  LocomotiveScroll = LocomotiveScroll && LocomotiveScroll.hasOwnProperty('default') ? LocomotiveScroll['default'] : LocomotiveScroll;
 
-    var scroll = new LocomotiveScroll({
-      el: document.querySelector('#js-scroll'),
-      smooth: true
+  var scroll = new LocomotiveScroll({
+    el: document.querySelector('#js-scroll'),
+    smooth: false
+  });
+  $(document).ready(function () {
+    $('.slide-live-project').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 1,
+      infinite: false
     });
+  });
 
 })));

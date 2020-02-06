@@ -9,10 +9,6 @@
 		display: flex;
 		justify-content: space-between;
 
-		.logo {
-
-		}
-
 		.menu {
 			
 			ul {
@@ -59,6 +55,7 @@
 
 					&.lang-menu {
 						padding-left: 200px;
+						position: relative;
 
 						@include media-breakpoint-down(lg) {
 							padding-left: 100px;
@@ -72,6 +69,45 @@
 
 							&:hover, &:focus {
 								border-bottom: 2px solid rgba(255,255,255,0);
+							}
+						}
+
+						.lang-drop {
+							background: #fff;
+							position: absolute;
+							margin-top: 10px;
+							display: none;
+							
+							ul {
+								list-style: none;
+								margin: 0;
+								padding: 0;
+
+								li {
+									display: block;
+									margin: 0;
+									padding: 0;
+
+									&:last-child {
+
+										a {
+											border-bottom: 0;
+										}
+									}
+
+									a {
+										display: block;
+										color: $dark;
+										font-size: 14px;
+										padding: 5px 20px;
+										border-bottom: 1px solid #ccc;
+
+										&:hover, &:focus {
+											color: #fff;
+											background: $dark;
+										}
+									}
+								}
 							}
 						}
 					}
