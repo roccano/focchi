@@ -1,13 +1,14 @@
 .section--header {
-	position: fixed;
+	position: absolute;
 	z-index: 1000;
 	width: 100%;
-	top: 50px;
+	padding: 20px 0;
+	top: 0;
 	width: 100%;
 	transition: top 0.2s ease-in-out;
 
 	&.scroll-down {
-		top: -100px;
+		top: -150px;
 	}
 
 	&.scroll-up {
@@ -21,7 +22,6 @@
 
 		.logo--dark {
 			display: block !important;
-			transform: scale(0.8);
 		}
 
 		.menu {

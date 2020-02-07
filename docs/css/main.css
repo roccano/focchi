@@ -4276,15 +4276,16 @@ ul {
     display: none !important; } }
 
 .section--header {
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   width: 100%;
-  top: 50px;
+  padding: 20px 0;
+  top: 0;
   width: 100%;
   -webkit-transition: top 0.2s ease-in-out;
   transition: top 0.2s ease-in-out; }
   .section--header.scroll-down {
-    top: -100px; }
+    top: -150px; }
   .section--header.scroll-up {
     background: #fff;
     top: 0;
@@ -4292,9 +4293,7 @@ ul {
     .section--header.scroll-up .logo--light {
       display: none !important; }
     .section--header.scroll-up .logo--dark {
-      display: block !important;
-      -webkit-transform: scale(0.8);
-              transform: scale(0.8); }
+      display: block !important; }
     .section--header.scroll-up .menu ul li a {
       color: #28292B !important;
       border-bottom: 2px solid rgba(0, 0, 0, 0) !important; }

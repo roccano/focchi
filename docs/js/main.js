@@ -49,7 +49,7 @@
 	        return;
 	      }
 
-	      if (top > lastScroll && top > 940 && !header.classList.contains(scrollDown)) {
+	      if (top > lastScroll && !header.classList.contains(scrollDown)) {
 	        // down
 	        header.classList.remove(scrollUp);
 	        header.classList.add(scrollDown);
