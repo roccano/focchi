@@ -166,22 +166,26 @@ strong {
   background: #fff;
   border: 2px solid #BEBEBF;
   color: #28292B;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s; }
   .btn--icon {
     height: 50px;
     display: inline-block;
     padding: 0;
     font-size: 11px;
     font-weight: 700;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s; }
     .btn--icon span {
-      padding: 0 10px;
-      border-left: 2px solid #bebebf;
+      padding: 0 20px;
       margin-left: 0;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
       display: inline-flex;
       height: 47px;
+      border-left: 2px solid #BEBEBF;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -202,6 +206,11 @@ strong {
       left: 3px;
       top: 2px;
       width: 50px; }
+    .btn--icon:hover, .btn--icon:focus {
+      -webkit-transition: all ease-in-out .3s;
+      transition: all ease-in-out .3s;
+      -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); }
 
 .btn--link {
   color: #28292B;
@@ -209,7 +218,14 @@ strong {
   font-size: 11px;
   font-weight: 700;
   border-bottom: 2px solid #000;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  padding-bottom: 3px; }
+  .btn--link:hover, .btn--link:focus {
+    border-bottom: 2px solid transparent;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s; }
 
 .container {
   width: 100%;
@@ -3621,15 +3637,27 @@ ul {
 
 .section--full-img {
   padding: 80px 0;
-  background: url("a/focchi/img/stripes.png") #FFF;
+  background: url("/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover; }
+  .section--full-img [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--full-img [data-scroll].is-inview {
+      opacity: 1; }
 
 .section--two-img {
   padding: 80px 0;
-  background: url("a/focchi/img/stripes.png") #FFF;
+  background: url("/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover; }
+  .section--two-img [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--two-img [data-scroll].is-inview {
+      opacity: 1; }
   .section--two-img .row .col-md-6 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3640,9 +3668,15 @@ ul {
 
 .section--two-text {
   padding: 80px 0;
-  background: url("a/focchi/img/stripes.png") #FFF;
+  background: url("/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover; }
+  .section--two-text [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--two-text [data-scroll].is-inview {
+      opacity: 1; }
   .section--two-text .text-box {
     margin-bottom: 100px;
     color: #28292B;
@@ -3657,15 +3691,19 @@ ul {
 
 .section--full-text {
   padding: 80px 0;
-  background: url("a/focchi/img/stripes.png") #FFF;
+  background: url("/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover; }
+  .section--full-text [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--full-text [data-scroll].is-inview {
+      opacity: 1; }
   .section--full-text .text-box {
     margin-bottom: 100px;
     color: #28292B;
     font-size: 18px; }
-    .section--full-text .text-box a {
-      color: #28292B; }
     .section--full-text .text-box:last-child {
       margin-bottom: 0; }
     .section--full-text .text-box .text {
@@ -4851,9 +4889,15 @@ ul {
 
 .section--project-spec {
   padding: 80px 0;
-  background: url("a/focchi/img/stripes.png");
+  background: url("/focchi/img/stripes.png");
   background-position: center;
   background-size: cover; }
+  .section--project-spec [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--project-spec [data-scroll].is-inview {
+      opacity: 1; }
   .section--project-spec .title {
     color: #28292B;
     font-family: "sofia-pro", sans-serif;
@@ -4870,7 +4914,7 @@ ul {
 
 .section--project-2-img {
   padding: 150px 0;
-  background: url("a/focchi/img/stripes.png");
+  background: url("/focchi/img/stripes.png");
   background-position: center;
   background-size: cover; }
   .section--project-2-img .row {
@@ -4888,13 +4932,25 @@ ul {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+  .section--project-2-img img {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--project-2-img img.is-inview {
+      opacity: 1; }
 
 .section--project-technology {
   padding: 300px 0;
   margin-top: -300px;
-  background: url("a/focchi/img/stripes.png") #E9E9E9;
+  background: url("/focchi/img/stripes.png") #E9E9E9;
   background-position: center;
   background-size: cover; }
+  .section--project-technology [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--project-technology [data-scroll].is-inview {
+      opacity: 1; }
   .section--project-technology .row {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -4903,8 +4959,6 @@ ul {
     margin-bottom: 100px;
     color: #28292B;
     font-size: 18px; }
-    .section--project-technology .text-box a {
-      color: #28292B; }
     .section--project-technology .text-box:last-child {
       margin-bottom: 0; }
     .section--project-technology .text-box .text {
@@ -4913,9 +4967,15 @@ ul {
 
 .section--project-process {
   padding: 0px 0 150px;
-  background: url("a/focchi/img/stripes.png") #BEBEBF;
+  background: url("/focchi/img/stripes.png") #BEBEBF;
   background-position: center;
   background-size: cover; }
+  .section--project-process [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--project-process [data-scroll].is-inview {
+      opacity: 1; }
   .section--project-process .full-width {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4932,10 +4992,16 @@ ul {
       color: #fff; }
 
 .section--project-designer {
-  background: url("a/focchi/img/stripes.png") #BEBEBF;
+  background: url("/focchi/img/stripes.png") #BEBEBF;
   background-position: center;
   background-size: cover;
   padding: 0 0 150px; }
+  .section--project-designer [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--project-designer [data-scroll].is-inview {
+      opacity: 1; }
   .section--project-designer .row {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -4947,10 +5013,16 @@ ul {
       color: #E3E3E3; }
 
 .section--project-live-project {
-  background: url("a/focchi/img/stripes.png") #FFF;
+  background: url("/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover;
   padding: 150px 0; }
+  .section--project-live-project [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--project-live-project [data-scroll].is-inview {
+      opacity: 1; }
   .section--project-live-project .slide-live-project {
     padding: 100px 0; }
     .section--project-live-project .slide-live-project .item {
@@ -4973,16 +5045,28 @@ ul {
       color: #28292B; }
 
 .section--project-other {
-  background: url("a/focchi/img/stripes.png") #FFF;
+  background: url("/focchi/img/stripes.png") #FFF;
   background-position: center;
   background-size: cover;
   padding: 150px 0 0; }
+  .section--project-other [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--project-other [data-scroll].is-inview {
+      opacity: 1; }
 
 .section--more-projects {
-  background: url("a/focchi/img/stripes.png") #BEBEBF;
+  background: url("/focchi/img/stripes.png") #BEBEBF;
   background-position: center;
   background-size: cover;
   padding: 150px 0; }
+  .section--more-projects [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--more-projects [data-scroll].is-inview {
+      opacity: 1; }
   .section--more-projects .row {
     -webkit-box-align: end;
         -ms-flex-align: end;

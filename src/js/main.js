@@ -14,8 +14,15 @@ import LocomotiveScroll from 'locomotive-scroll';
             el: document.querySelector('#js-scroll'),
             smooth: true,
             getSpeed: true,
-            getDirection: true,
-            useKeyboard: true
+            getDirection: false,
+            useKeyboard: true,
+            inertia: 1,
+            "class": 'is-inview',
+            scrollbarClass: 'c-scrollbar',
+            scrollingClass: 'has-scroll-scrolling',
+            draggingClass: 'has-scroll-dragging',
+            smoothClass: 'has-scroll-smooth',
+            initClass: 'has-scroll-init',
         });
     }, 1000)
 
@@ -29,5 +36,5 @@ $(document).ready(function(){
         slidesToShow: 1,
         infinite: false
     });
-  });
+});
           
