@@ -39,9 +39,13 @@ import LocomotiveScroll from "locomotive-scroll";
 				return;
 			}
 			if (top > 960) {
-				console.log("fine-hero");
+				//console.log("fine-hero");
 			}
-			if (top > lastScroll && !header.classList.contains(scrollDown)) {
+			if (
+				top > lastScroll &&
+				top > 940 &&
+				!header.classList.contains(scrollDown)
+			) {
 				// down
 				header.classList.remove(scrollUp);
 				header.classList.add(scrollDown);

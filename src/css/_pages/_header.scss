@@ -7,8 +7,7 @@
 	transition: top 0.2s ease-in-out;
 
 	&.scroll-down {
-		opacity: 0;
-		top: 0;
+		top: -100px;
 	}
 
 	&.scroll-up {
@@ -118,7 +117,7 @@
 						a {
 							&:hover,
 							&:focus {
-								border-bottom: 2px solid rgba(255, 255, 255, 0);
+								border-bottom: 2px solid rgba(255, 255, 255, 0) !important;
 							}
 						}
 
@@ -168,7 +167,7 @@
 						a {
 							&:hover,
 							&:focus {
-								border-bottom: 2px solid rgba(255, 255, 255, 0);
+								border-bottom: 2px solid rgba(255, 255, 255, 0) !important;
 							}
 						}
 					}
