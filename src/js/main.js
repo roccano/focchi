@@ -28,26 +28,30 @@ import LocomotiveScroll from "locomotive-scroll";
 
 	function fixedHeader(scroll) {
 		const body = document.body;
+		const header = document.querySelector("#header");
 		const scrollUp = "scroll-up";
 		const scrollDown = "scroll-down";
 		let lastScroll = 0;
 
 		function onPageDidScroll(top) {
 			if (top == 0) {
-				body.classList.remove(scrollUp);
+				header.classList.remove(scrollUp);
 				return;
 			}
-			if (top > lastScroll && !body.classList.contains(scrollDown)) {
+			if (top > 960) {
+				console.log("fine-hero");
+			}
+			if (top > lastScroll && !header.classList.contains(scrollDown)) {
 				// down
-				body.classList.remove(scrollUp);
-				body.classList.add(scrollDown);
+				header.classList.remove(scrollUp);
+				header.classList.add(scrollDown);
 			} else if (
 				top < lastScroll &&
-				body.classList.contains(scrollDown)
+				header.classList.contains(scrollDown)
 			) {
 				// up
-				body.classList.remove(scrollDown);
-				body.classList.add(scrollUp);
+				header.classList.remove(scrollDown);
+				header.classList.add(scrollUp);
 			}
 			lastScroll = top;
 		}
