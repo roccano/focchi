@@ -5,7 +5,7 @@
 	padding: 20px 0;
 	top: 0;
 	width: 100%;
-	transition: top 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
 
 	&.scroll-down {
 		top: -150px;
@@ -78,7 +78,6 @@
 					a {
 						color: #fff;
 						font-size: 21px;
-						transition: all ease-in-out 0.3s;
 						border-bottom: 2px solid rgba(255, 255, 255, 0);
 
 						@include media-breakpoint-down(lg) {
@@ -92,7 +91,6 @@
 						&:hover,
 						&:focus {
 							border-bottom: 2px solid rgba(255, 255, 255, 1);
-							transition: all ease-in-out 0.3s;
 						}
 					}
 
