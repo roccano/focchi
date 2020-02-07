@@ -26,6 +26,7 @@
 			border-left: 2px solid #BEBEBF;
 			justify-content: center;
 			align-items: center;
+			transition: all ease-in-out .3s;
 		}
 	
 		svg {
@@ -40,7 +41,12 @@
 
 		&:hover, &:focus {
 			transition: all ease-in-out .3s;
-			box-shadow: 0 10px 30px rgba(0,0,0,.2);
+			border: 2px solid #000;
+
+			span {
+				border-left: 2px solid #000;
+				transition: all ease-in-out .3s;
+			}
 		}
 	}
 }
