@@ -39,6 +39,15 @@
 	background-position: center;
 	background-size: cover;
 
+	[data-scroll] {
+		opacity: 0;
+		transition: opacity 1.5s ease-in-out;
+		
+		&.is-inview {
+			opacity: 1;
+		}
+	}
+
 	.row {
 		align-items: flex-end;
 
@@ -46,15 +55,6 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-		}
-	}
-
-	img {
-		opacity: 0;
-		transition: opacity 1.5s ease-in-out;
-		
-		&.is-inview {
-			opacity: 1;
 		}
 	}
 }

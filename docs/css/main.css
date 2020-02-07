@@ -4917,6 +4917,12 @@ ul {
   background: url("/focchi/img/stripes.png");
   background-position: center;
   background-size: cover; }
+  .section--project-2-img [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out; }
+    .section--project-2-img [data-scroll].is-inview {
+      opacity: 1; }
   .section--project-2-img .row {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -4932,12 +4938,6 @@ ul {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-  .section--project-2-img img {
-    opacity: 0;
-    -webkit-transition: opacity 1.5s ease-in-out;
-    transition: opacity 1.5s ease-in-out; }
-    .section--project-2-img img.is-inview {
-      opacity: 1; }
 
 .section--project-technology {
   padding: 300px 0;
