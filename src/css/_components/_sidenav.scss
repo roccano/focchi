@@ -124,9 +124,6 @@
     transition: 0.5s;
     display: flex;
     align-items: center;
-    @include media-breakpoint-down(xs) {
-        height: 90px;
-    }
     a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
