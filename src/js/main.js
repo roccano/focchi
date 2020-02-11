@@ -101,6 +101,18 @@ import LocomotiveScroll from "locomotive-scroll";
         });
     }
 
+    function openLang() {
+        $(".lang-menu a").click(function() {
+            $('#langSidenav').css("height", "150px");
+        });
+    }
+
+    function closeLang() {
+        $(".lang-sidenav .closebtn").click(function() {
+            $('#langSidenav').css("height", "0");
+        });
+    }
+
 
     $(document).ready(function() {
         const scroll = getLocomotiveScroll();
@@ -110,5 +122,7 @@ import LocomotiveScroll from "locomotive-scroll";
         closeMenu();
         openSearch();
         closeSearch();
+        openLang();
+        closeLang();
     });
 })();

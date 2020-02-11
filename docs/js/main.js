@@ -109,6 +109,18 @@
         });
       }
 
+      function openLang() {
+        $(".lang-menu a").click(function () {
+          $('#langSidenav').css("height", "150px");
+        });
+      }
+
+      function closeLang() {
+        $(".lang-sidenav .closebtn").click(function () {
+          $('#langSidenav').css("height", "0");
+        });
+      }
+
       $(document).ready(function () {
         var scroll = getLocomotiveScroll();
         fixedHeader(scroll);
@@ -117,6 +129,8 @@
         closeMenu();
         openSearch();
         closeSearch();
+        openLang();
+        closeLang();
       });
     })();
 
