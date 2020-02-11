@@ -1,155 +1,136 @@
-@import '../mixins';
-
+@import "../mixins";
 %section--hero {
-	position: relative;
-	background: white;
-
-	.background {
-		z-index: 0;
-	}
-
-	.container {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		padding-bottom: 150px;
-	}
-
-	@media screen {
-
-		.aspect {
-			height: 100%;
-		}
-
-		.container {
-			height: 100%;
-		}
-
-		@include media-breakpoint-up(sm) {
-			height: calc(100vh - 35px);
-		}
-
-		@include media-breakpoint-down(xs) {
-			height: 70vh;
-
-			.container {
-				padding-top: 0;
-			}
-		}
-
-	}
-
-	@media print {
-		background: white;
-
-		video,
-		img,
-		[data-thron] {
-			display: none;
-		}
-	}
+    position: relative;
+    background: white;
+    .background {
+        z-index: 0;
+    }
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 150px;
+    }
+    @media screen {
+        .aspect {
+            height: 100%;
+        }
+        .container {
+            height: 100%;
+        }
+        @include media-breakpoint-up(sm) {
+            height: 80vh;
+        }
+        @include media-breakpoint-down(xs) {
+            height: 70vh;
+            .container {
+                padding-top: 0;
+            }
+        }
+    }
+    @media print {
+        background: white;
+        video,
+        img,
+        [data-thron] {
+            display: none;
+        }
+    }
 }
 
 %section--hero-title {
-
-	.category {
-		font-family: $font-primary;
-		font-size: 20px;
-		line-height: 1.2;
-		font-weight: $font-medium;
-		margin-bottom: 15px;
-		color: $foreground-negative;
-		text-transform: uppercase;
-	}
-
-	.title {
-		font-family: $font-primary;
-		font-size: 80px;
-		line-height: 80px;
-		font-weight: $font-regular;
-		margin-bottom: 15px;
-		color: $foreground-negative;
-
-		small {
-			font-size: 50px;
-		}
-	}
-
-	.abstract {
-		font-size: 18px;
-		line-height: 32px;
-		font-weight: $font-regular;
-		color: $foreground-negative;
-		max-width: 960px;
-	}
-
-	@media print {
-
-		.category {
-			color: $foreground;
-		}
-
-		.title {
-			color: $foreground;
-		}
-
-		.abstract {
-			color: $foreground;
-		}
-
-	}
-
+    .category {
+        font-family: $font-primary;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: $font-medium;
+        margin-bottom: 15px;
+        color: $foreground-negative;
+        text-transform: uppercase;
+    }
+    .title {
+        font-family: $font-primary;
+        font-size: 80px;
+        line-height: 80px;
+        font-weight: $font-regular;
+        margin-bottom: 15px;
+        color: $foreground-negative;
+        @include media-breakpoint-down(sm) {
+            font-size: 50px;
+            margin-bottom: 0;
+        }
+        @include media-breakpoint-down(xs) {
+            margin-bottom: 10px;
+            line-height: 60px;
+        }
+        small {
+            font-size: 50px;
+        }
+    }
+    .abstract {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: $font-regular;
+        color: $foreground-negative;
+        max-width: 960px;
+    }
+    @media print {
+        .category {
+            color: $foreground;
+        }
+        .title {
+            color: $foreground;
+        }
+        .abstract {
+            color: $foreground;
+        }
+    }
 }
 
 .section--hero {
-	@extend %section--hero;
-	@extend %section--hero-title;
-
-	@include media-breakpoint-up(md) {
-		height: 100vh;
-	}
-
-	@include media-breakpoint-down(sm) {
-		height: 70vh;
-	}
-
-	.caption {
-		position: absolute;
-		left: 80px;
-		bottom: 80px;
-	}
+    @extend %section--hero;
+    @extend %section--hero-title;
+    @include media-breakpoint-up(md) {
+        height: 100vh;
+    }
+    .caption {
+        position: absolute;
+        left: 80px;
+        bottom: 80px;
+        @include media-breakpoint-down(xs) {
+            left: 0;
+            bottom: 0;
+            padding: 40px;
+        }
+    }
 }
 
 .section--hero-secondary {
-	@extend %section--hero;
-	@extend %section--hero-title;
-
-	.container {
-		padding-bottom: 90px;
-	}
-
-	@include media-breakpoint-up(md) {
-		height: 560px;
-	}
-
-	@include media-breakpoint-down(sm) {
-		height: 60vh;
-	}
+    @extend %section--hero;
+    @extend %section--hero-title;
+    .container {
+        padding-bottom: 90px;
+    }
+    @include media-breakpoint-up(md) {
+        height: 560px;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 60vh;
+    }
 }
 
 .scroll__indicator {
-	position: absolute;
-	left: 50%;
-	bottom: 30px;
-	transform: translateX(-50%);
-	z-index: 10;
-
-	svg {
-		width: 40px;
-		height: 40px;
-		fill: white;
-		animation: down-soft 1.8s both infinite;
-		animation-delay: 3s;
-	}
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    z-index: 10;
+    svg {
+        width: 40px;
+        height: 40px;
+        fill: white;
+        animation: down-soft 1.8s both infinite;
+        animation-delay: 3s;
+    }
 }

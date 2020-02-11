@@ -1,23 +1,25 @@
 .section--two-img {
-	padding: 80px 0;
-	background: url('/focchi/img/stripes.png') #FFF;
-	background-position: center;
-	background-size: cover;
-
-	[data-scroll] {
-		opacity: 0;
-		transition: opacity 1.5s ease-in-out;
-		
-		&.is-inview {
-			opacity: 1;
-		}
-	}
-
-	.row {
-
-		.col-md-6 {
-			display: flex;
-			justify-content: center;
-		}
-	}
+    padding: 80px 0;
+    background: url("/focchi/img/stripes.png") #fff;
+    background-position: center;
+    background-size: cover;
+    @include media-breakpoint-down(sm) {
+        padding: 0;
+    }
+    [data-scroll] {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        &.is-inview {
+            opacity: 1;
+        }
+    }
+    .row {
+        .col-md-6 {
+            display: flex;
+            justify-content: center;
+            @include media-breakpoint-down(xs) {
+                padding-bottom: 50px;
+            }
+        }
+    }
 }

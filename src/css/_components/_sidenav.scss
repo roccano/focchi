@@ -1,0 +1,109 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: #28292B;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        &:hover {
+            color: #f1f1f1;
+        }
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.search-sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 0;
+    background-color: #28292B;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        &:hover {
+            color: #f1f1f1;
+        }
+    }
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        .title {
+            color: #fff;
+            padding-bottom: 10px;
+        }
+        input[type="text"] {
+            background: transparent;
+            border: 2px solid #707070;
+            padding: 10px;
+            color: #707070;
+            font-size: 14px;
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            font-family: sofia-pro, sans-serif;
+        }
+        input[type="button"] {
+            background: #FF9320;
+            padding: 10px;
+            border: 0;
+            text-transform: uppercase;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: sofia-pro, sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+}

@@ -1,96 +1,99 @@
 html {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	overflow-x: hidden;
-	overscroll-behavior: none;
-	scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
 }
 
 body {
-	width: 100%;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
-
-	@include scrollbar();
-
-	&.o-scroll {
-		box-sizing: border-box;
-		overflow: hidden;
-		width: 100vw;
-	}
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    @include scrollbar();
+    &.o-scroll {
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100vw;
+    }
 }
 
 [unselectable] {
-	-webkit-touch-callout: none;
-	user-select: none;
+    -webkit-touch-callout: none;
+    user-select: none;
 }
 
 [if],
 [for] {
-	display: none;
+    display: none;
 }
 
 .app {
-	position: relative;
+    position: relative;
 }
 
 .hidden {
-	display: none;
+    display: none;
 }
 
 .sticky--menu {
-	position: absolute;
-	top: 160px;
-	width: 100%;
-	bottom: 0;
-
-	.section--menu {
-		position: sticky;
-		top: 15px;
-		width: 100%;
-		z-index: 900;
-
-		.nav--menu {
-			margin-top: 0;
-			box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2);
-		}
-	}
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    bottom: 0;
+    .section--menu {
+        position: sticky;
+        top: 15px;
+        width: 100%;
+        z-index: 900;
+        .nav--menu {
+            margin-top: 0;
+            box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2);
+        }
+    }
 }
 
 .c-scrollbar {
-	width: 10px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 100vh;
-	transform-origin: center right;
-	transform: scaleX(1);
-	transition: transform 0.2s linear;
+    width: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    transform-origin: center right;
+    transform: scaleX(1);
+    transition: transform 0.2s linear;
 }
 
 .c-scrollbar_thumb {
-	background-color: #ff9320;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 10px;
+    background-color: #ff9320;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 10px;
 }
 
 img {
-	display: block;
-	max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 .arrow-up {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 5px solid #fff;
-	position: absolute;
-	left: 10px;
-	top: -5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    position: absolute;
+    left: 10px;
+    top: -5px;
+}
+
+.container-fluid {
+    @include media-breakpoint-down(xs) {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
 }

@@ -1,176 +1,182 @@
 .section--header {
-	position: absolute;
-	z-index: 1000;
-	width: 100%;
-	padding: 20px 0;
-	top: 0;
-	width: 100%;
-	transition: all 0.3s ease-in-out;
-
-	&.scroll-down {
-		top: -150px;
-	}
-
-	&.scroll-up {
-		background: #fff;
-		top: 0;
-		position: fixed !important;
-
-		.logo--light {
-			display: none !important;
-		}
-
-		.logo--dark {
-			display: block !important;
-		}
-
-		.menu {
-			ul {
-				li {
-					a {
-						color: $dark !important;
-						border-bottom: 2px solid rgba(0, 0, 0, 0) !important;
-						&:hover,
-						&:focus {
-							border-bottom: 2px solid rgba(0, 0, 0, 1) !important;
-							transition: all ease-in-out 0.3s;
-						}
-					}
-					&.active {
-						a {
-							border-bottom: 2px solid rgba(0, 0, 0, 1) !important;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.wrap {
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-
-		.logo--dark {
-			display: none;
-		}
-
-		.logo--light {
-			display: block;
-		}
-
-		.menu {
-			ul {
-				list-style: none;
-
-				li {
-					display: inline-block;
-					padding: 0 30px;
-
-					@include media-breakpoint-down(lg) {
-						padding: 0 20px;
-					}
-
-					@include media-breakpoint-down(md) {
-						padding: 0 15px;
-					}
-
-					a {
-						color: #fff;
-						font-size: 21px;
-						border-bottom: 2px solid rgba(255, 255, 255, 0);
-
-						@include media-breakpoint-down(lg) {
-							font-size: 16px;
-						}
-
-						@include media-breakpoint-down(md) {
-							font-size: 14px;
-						}
-
-						&:hover,
-						&:focus {
-							border-bottom: 2px solid rgba(255, 255, 255, 1);
-						}
-					}
-
-					&.active {
-						a {
-							border-bottom: 2px solid rgba(255, 255, 255, 1);
-						}
-					}
-
-					&.lang-menu {
-						padding-left: 200px;
-						position: relative;
-
-						@include media-breakpoint-down(lg) {
-							padding-left: 100px;
-						}
-
-						@include media-breakpoint-down(md) {
-							padding-left: 50px;
-						}
-
-						a {
-							&:hover,
-							&:focus {
-								border-bottom: 2px solid rgba(255, 255, 255, 0) !important;
-							}
-						}
-
-						.lang-drop {
-							background: #fff;
-							position: absolute;
-							margin-top: 10px;
-							display: none;
-
-							ul {
-								list-style: none;
-								margin: 0;
-								padding: 0;
-
-								li {
-									display: block;
-									margin: 0;
-									padding: 0;
-
-									&:last-child {
-										a {
-											border-bottom: 0;
-										}
-									}
-
-									a {
-										display: block;
-										color: $dark;
-										font-size: 14px;
-										padding: 5px 20px;
-										border-bottom: 1px solid #ccc;
-
-										&:hover,
-										&:focus {
-											color: #fff;
-											background: $dark;
-										}
-									}
-								}
-							}
-						}
-					}
-
-					&.search-menu {
-						padding-right: 0;
-
-						a {
-							&:hover,
-							&:focus {
-								border-bottom: 2px solid rgba(255, 255, 255, 0) !important;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 30px;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    &.scroll-down {
+        top: -150px;
+    }
+    &.scroll-up {
+        background: #fff;
+        top: 0;
+        position: fixed !important;
+        .logo--light {
+            display: none !important;
+        }
+        .logo--dark {
+            display: block !important;
+        }
+        .menu {
+            ul {
+                li {
+                    a {
+                        color: $dark !important;
+                        border-bottom: 2px solid rgba(0, 0, 0, 0) !important;
+                        &:hover,
+                        &:focus {
+                            border-bottom: 2px solid rgba(0, 0, 0, 1) !important;
+                            transition: all ease-in-out 0.3s;
+                        }
+                    }
+                    &.active {
+                        a {
+                            border-bottom: 2px solid rgba(0, 0, 0, 1) !important;
+                        }
+                    }
+                    &.search-menu {
+                        .icon--search {
+                            display: none !important;
+                        }
+                        .icon--search-black {
+                            display: block !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        .logo--dark {
+            display: none;
+        }
+        .logo--light {
+            display: block;
+        }
+        .menu {
+            ul {
+                display: inline-block;
+                padding: 0;
+                &.main-menu {
+                    @include media-breakpoint-down(sm) {
+                        display: none;
+                    }
+                }
+            }
+            list-style: none;
+            display: inline-block;
+            li {
+                display: inline-block;
+                padding: 0 30px;
+                @include media-breakpoint-down(lg) {
+                    padding: 0 20px;
+                }
+                @include media-breakpoint-down(md) {
+                    padding: 0 15px;
+                }
+                a {
+                    color: #fff;
+                    font-size: 21px;
+                    border-bottom: 2px solid rgba(255, 255, 255, 0);
+                    @include media-breakpoint-down(lg) {
+                        font-size: 16px;
+                    }
+                    @include media-breakpoint-down(md) {
+                        font-size: 16px;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        font-size: 18px;
+                    }
+                    &:hover,
+                    &:focus {
+                        border-bottom: 2px solid rgba(255, 255, 255, 1);
+                    }
+                }
+                &.active {
+                    a {
+                        border-bottom: 2px solid rgba(255, 255, 255, 1);
+                    }
+                }
+                &.lang-menu {
+                    position: relative;
+                    @include media-breakpoint-down(sm) {
+                        display: inline-block;
+                    }
+                    a {
+                        &:hover,
+                        &:focus {
+                            border-bottom: 2px solid rgba(255, 255, 255, 0) !important;
+                        }
+                    }
+                    .lang-drop {
+                        background: #fff;
+                        position: absolute;
+                        margin-top: 10px;
+                        display: none;
+                        ul {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            li {
+                                display: block;
+                                margin: 0;
+                                padding: 0;
+                                &:last-child {
+                                    a {
+                                        border-bottom: 0;
+                                    }
+                                }
+                                a {
+                                    display: block;
+                                    color: $dark;
+                                    font-size: 14px;
+                                    padding: 5px 20px;
+                                    border-bottom: 1px dashed #ccc;
+                                    &:hover,
+                                    &:focus {
+                                        color: #fff;
+                                        background: $dark;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.search-menu {
+                    padding-right: 0;
+                    .icon--search {
+                        display: block;
+                    }
+                    .icon--search-black {
+                        display: none;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        display: inline-block;
+                    }
+                    a {
+                        &:hover,
+                        &:focus {
+                            border-bottom: 2px solid rgba(255, 255, 255, 0) !important;
+                        }
+                    }
+                }
+                &.menu-mobile {
+                    display: none;
+                    @include media-breakpoint-down(sm) {
+                        display: inline-block;
+                    }
+                    a {
+                        &:hover,
+                        &:focus {
+                            border-bottom: 2px solid rgba(255, 255, 255, 0) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
