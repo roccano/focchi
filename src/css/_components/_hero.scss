@@ -20,10 +20,10 @@
             height: 100%;
         }
         @include media-breakpoint-up(sm) {
-            height: 80vh;
+            height: 100vh;
         }
         @include media-breakpoint-down(xs) {
-            height: 70vh;
+            height: 100vh;
             .container {
                 padding-top: 0;
             }

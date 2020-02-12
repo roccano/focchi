@@ -54,6 +54,12 @@
             @include media-breakpoint-down(md) {
                 height: 77px;
             }
+            img {
+                @include media-breakpoint-down(md) {
+                    width: 150px;
+                    height: auto;
+                }
+            }
         }
         .website {
             padding-top: 50px;

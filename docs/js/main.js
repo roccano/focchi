@@ -17,7 +17,7 @@
       document.documentElement.classList.remove("is-loading");
       setTimeout(function () {
         document.documentElement.classList.add("is-ready");
-      }, 300);
+      }, 100);
 
       function getLocomotiveScroll() {
         var scroll = new LocomotiveScroll({
@@ -89,35 +89,23 @@
         $(".menu-mobile a").click(function () {
           $('#menuSidenav').css("width", "250px");
         });
+        $(".search-menu a").click(function () {
+          $('#menuSidenav').css("width", "250px");
+        });
+        $(".lang-menu a").click(function () {
+          $('#menuSidenav').css("width", "250px");
+        });
       }
 
       function closeMenu() {
         $(".sidenav .closebtn").click(function () {
           $('#menuSidenav').css("width", "0");
         });
-      }
-
-      function openSearch() {
-        $(".search-menu a").click(function () {
-          $('#searchSidenav').css("width", "250px");
-        });
-      }
-
-      function closeSearch() {
         $(".search-sidenav .closebtn").click(function () {
-          $('#searchSidenav').css("width", "0");
+          $('#menuSidenav').css("width", "0");
         });
-      }
-
-      function openLang() {
-        $(".lang-menu a").click(function () {
-          $('#langSidenav').css("height", "150px");
-        });
-      }
-
-      function closeLang() {
         $(".lang-sidenav .closebtn").click(function () {
-          $('#langSidenav').css("height", "0");
+          $('#menuSidenav').css("width", "0");
         });
       }
 
@@ -127,10 +115,6 @@
         slideLiveProject();
         openMenu();
         closeMenu();
-        openSearch();
-        closeSearch();
-        openLang();
-        closeLang();
       });
     })();
 

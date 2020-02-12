@@ -13,11 +13,18 @@
         background: #fff;
         top: 0;
         position: fixed !important;
+        padding: 10px 30px;
         .logo--light {
             display: none !important;
         }
         .logo--dark {
             display: block !important;
+            height: 50px;
+            width: auto;
+        }
+        .icon--bars,
+        .icon--search {
+            fill: $dark;
         }
         .menu {
             ul {
@@ -36,14 +43,6 @@
                             border-bottom: 2px solid rgba(0, 0, 0, 1) !important;
                         }
                     }
-                    &.search-menu {
-                        .icon--search {
-                            display: none !important;
-                        }
-                        .icon--search-black {
-                            display: block !important;
-                        }
-                    }
                 }
             }
         }
@@ -51,6 +50,7 @@
     .wrap {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         .logo--dark {
             display: none;
         }
@@ -61,6 +61,7 @@
             ul {
                 display: inline-block;
                 padding: 0;
+                margin: 0;
                 &.main-menu {
                     @include media-breakpoint-down(sm) {
                         display: none;
@@ -104,7 +105,7 @@
                 &.lang-menu {
                     position: relative;
                     @include media-breakpoint-down(sm) {
-                        display: inline-block;
+                        display: none;
                     }
                     a {
                         &:hover,
@@ -112,50 +113,11 @@
                             border-bottom: 2px solid rgba(255, 255, 255, 0) !important;
                         }
                     }
-                    .lang-drop {
-                        background: #fff;
-                        position: absolute;
-                        margin-top: 10px;
-                        display: none;
-                        ul {
-                            list-style: none;
-                            margin: 0;
-                            padding: 0;
-                            li {
-                                display: block;
-                                margin: 0;
-                                padding: 0;
-                                &:last-child {
-                                    a {
-                                        border-bottom: 0;
-                                    }
-                                }
-                                a {
-                                    display: block;
-                                    color: $dark;
-                                    font-size: 14px;
-                                    padding: 5px 20px;
-                                    border-bottom: 1px dashed #ccc;
-                                    &:hover,
-                                    &:focus {
-                                        color: #fff;
-                                        background: $dark;
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
                 &.search-menu {
                     padding-right: 0;
-                    .icon--search {
-                        display: block;
-                    }
-                    .icon--search-black {
-                        display: none;
-                    }
                     @include media-breakpoint-down(sm) {
-                        display: inline-block;
+                        display: none;
                     }
                     a {
                         &:hover,

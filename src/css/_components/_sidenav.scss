@@ -9,8 +9,74 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @include media-breakpoint-down(sm) {
+        justify-content: space-between;
+    }
+    .menu-mobile {
+        display: none;
+        @include media-breakpoint-down(sm) {
+            display: block;
+        }
+    }
+    .lang-menu {
+        padding: 20px;
+        .title {
+            color: #fff;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+        a {
+            padding: 0;
+            @include media-breakpoint-down(sm) {
+                font-size: 20px;
+            }
+        }
+    }
+    .search-web {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        .title {
+            color: #fff;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+        input[type="text"] {
+            background: transparent;
+            border: 2px solid #707070;
+            padding: 10px;
+            color: #707070;
+            font-size: 14px;
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            font-family: sofia-pro, sans-serif;
+        }
+        input[type="button"] {
+            background: #FF9320;
+            padding: 10px;
+            border: 0;
+            text-transform: uppercase;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: sofia-pro, sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    }
     a {
-        padding: 8px 8px 8px 32px;
+        padding: 8px 8px 8px 20px;
         text-decoration: none;
         font-size: 25px;
         color: #818181;
@@ -61,39 +127,6 @@
         transition: 0.3s;
         &:hover {
             color: #f1f1f1;
-        }
-    }
-    .wrap {
-        display: flex;
-        flex-direction: column;
-        padding: 0 20px;
-        .title {
-            color: #fff;
-            padding-bottom: 10px;
-        }
-        input[type="text"] {
-            background: transparent;
-            border: 2px solid #707070;
-            padding: 10px;
-            color: #707070;
-            font-size: 14px;
-            display: inline-block;
-            width: 100%;
-            position: relative;
-            font-family: sofia-pro, sans-serif;
-        }
-        input[type="button"] {
-            background: #FF9320;
-            padding: 10px;
-            border: 0;
-            text-transform: uppercase;
-            color: #fff;
-            text-transform: uppercase;
-            font-family: sofia-pro, sans-serif;
-            font-weight: 700;
-            letter-spacing: 1px;
-            cursor: pointer;
-            margin-top: 10px;
         }
     }
     .closebtn {
