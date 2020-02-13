@@ -100,16 +100,6 @@ img {
 
 .swiper-container {
     padding: 50px 0;
-    height: 600px;
-    @include media-breakpoint-down(md) {
-        height: 500px;
-    }
-    @include media-breakpoint-down(sm) {
-        height: 400px;
-    }
-    @include media-breakpoint-down(xs) {
-        height: 300px;
-    }
     .swiper-slide {
         display: flex;
         align-items: center;
