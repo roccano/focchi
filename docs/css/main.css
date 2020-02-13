@@ -3814,7 +3814,8 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 20px; }
+    padding: 20px;
+    height: 40px; }
     .sidenav .search-web .title {
       color: #fff;
       padding-bottom: 10px;
