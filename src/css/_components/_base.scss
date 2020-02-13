@@ -115,3 +115,9 @@ img {
         align-items: center;
     }
 }
+
+html:not(.has-scroll-init) {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+}

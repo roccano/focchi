@@ -124,19 +124,12 @@ import LocomotiveScroll from "locomotive-scroll";
         })
     };
 
+    setTimeout(() => {
+        var scroll = getLocomotiveScroll();
+        fixedHeader(scroll); //slideLiveProject();
 
-
-    $(document).ready(function() {
-        setTimeout(() => {
-            var scroll = getLocomotiveScroll();
-            fixedHeader(scroll); //slideLiveProject();
-
-            openMenu();
-            closeMenu();
-        }, 500);
-    });
-
-
-
+        openMenu();
+        closeMenu();
+    }, 500);
 
 })();

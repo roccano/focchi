@@ -129,15 +129,13 @@
         });
       };
 
-      $(document).ready(function () {
-        setTimeout(function () {
-          var scroll = getLocomotiveScroll();
-          fixedHeader(scroll); //slideLiveProject();
+      setTimeout(function () {
+        var scroll = getLocomotiveScroll();
+        fixedHeader(scroll); //slideLiveProject();
 
-          openMenu();
-          closeMenu();
-        }, 500);
-      });
+        openMenu();
+        closeMenu();
+      }, 500);
     })();
 
 })));
