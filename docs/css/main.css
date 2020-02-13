@@ -116,6 +116,15 @@ img {
 .swiper-container {
   padding: 50px 0;
   height: 600px; }
+  @media (max-width: 1439.98px) {
+    .swiper-container {
+      height: 500px; } }
+  @media (max-width: 1023.98px) {
+    .swiper-container {
+      height: 400px; } }
+  @media (max-width: 767.98px) {
+    .swiper-container {
+      height: 300px; } }
   .swiper-container .swiper-slide {
     display: -webkit-box;
     display: -ms-flexbox;
