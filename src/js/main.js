@@ -6,7 +6,7 @@ import LocomotiveScroll from "locomotive-scroll";
 
     setTimeout(() => {
         document.documentElement.classList.add("is-ready");
-    }, 300);
+    }, 100);
 
 
     function getLocomotiveScroll() {
@@ -69,14 +69,7 @@ import LocomotiveScroll from "locomotive-scroll";
         }
     }
 
-    /*function slideLiveProject() {
-        $(".slide-live-project").slick({
-            centerMode: true,
-            centerPadding: "60px",
-            slidesToShow: 1,
-            infinite: false
-        });
-    }*/
+
 
     function openMenu() {
         $(".menu-mobile a").click(function() {
@@ -102,7 +95,17 @@ import LocomotiveScroll from "locomotive-scroll";
         });
     }
 
-
+    window.onload = function() {
+        //initialize swiper when document ready
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+        })
+    };
 
 
 
@@ -113,6 +116,8 @@ import LocomotiveScroll from "locomotive-scroll";
         openMenu();
         closeMenu();
     });
+
+
 
 
 })();

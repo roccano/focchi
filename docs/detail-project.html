@@ -16,8 +16,8 @@
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500|Hind+Madurai:300,400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/focchi/css/fontawesome.css" />
-    <link rel="stylesheet" href="/focchi/css/slick.css" />
-    <link rel="stylesheet" href="/focchi/css/slick-theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="/focchi/css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="/focchi/css/vendors.min.css" />
     <link rel="stylesheet" href="/focchi/css/main.min.css" />
@@ -290,17 +290,32 @@
                 </div>
             </div>
         </div>
-        <!--<div class="slide-live-project" data-scroll data-scroll-speed="0.5">
-            <div class="item">
-                <a href="https://via.placeholder.com/1100x700/CCC" data-fancybox="nome-progetto" data-caption="Caption for single image"><img src="https://via.placeholder.com/1100x700/CCC" /></a>
-            </div>
-            <div class="item item--video">
-                <a href="https://via.placeholder.com/1100x700/CCC" data-fancybox="nome-progetto" data-caption="Caption for single image"><img src="https://via.placeholder.com/1100x700/CCC" /></a>
-            </div>
-            <div class="item">
-                <a href="https://via.placeholder.com/1100x700/CCC" data-fancybox="nome-progetto" data-caption="Caption for single image"><img src="https://via.placeholder.com/1100x700/CCC" /></a>
-            </div>
-        </div>-->
+    </div>
+<!-- start slider-project.html-->
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <a href="/focchi/img/projects/live-project-1.jpg" data-fancybox="nome-progetto" data-caption="Caption for single image">
+                <img src="/focchi/img/projects/live-project-1.jpg" />
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="/focchi/img/projects/live-project-2.jpg" data-fancybox="nome-progetto" data-caption="Caption for single image">
+                <img src="/focchi/img/projects/live-project-2.jpg" />
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="/focchi/img/projects/live-project-3.jpg" data-fancybox="nome-progetto" data-caption="Caption for single image">
+                <img src="/focchi/img/projects/live-project-3.jpg" />
+            </a>
+        </div>
+    </div>
+</div>
+<!-- end slider-project.html-->
+    <div class="container-fluid">
         <div class="row">
             <div class="col-xl-8 col-lg-8" data-scroll data-scroll-speed="-0.5">
                 <div class="text">
@@ -680,7 +695,8 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es5%2CArray.prototype.find%2Cfetch%2CObject.assign"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="/focchi/js/slick.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="/focchi/js/jquery.fancybox.min.js"></script>
 <script src="/focchi/js/vendors.min.js"></script>
 <script src="/focchi/js/main.js"></script>

@@ -113,10 +113,16 @@ img {
     padding-left: 30px !important;
     padding-right: 30px !important; } }
 
-.fade {
-  opacity: 0;
-  -webkit-transition: 0.3s opacity;
-  transition: 0.3s opacity; }
+.swiper-container {
+  padding: 50px 0;
+  height: 600px; }
+  .swiper-container .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 body {
   font-family: "sofia-pro", sans-serif;

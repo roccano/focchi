@@ -98,7 +98,11 @@ img {
     }
 }
 
-.fade {
-    opacity: 0;
-    transition: 0.3s opacity;
+.swiper-container {
+    padding: 50px 0;
+    height: 600px;
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+    }
 }
