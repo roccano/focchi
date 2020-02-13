@@ -127,11 +127,13 @@ import LocomotiveScroll from "locomotive-scroll";
 
 
     $(document).ready(function() {
-        const scroll = getLocomotiveScroll();
-        fixedHeader(scroll);
-        //slideLiveProject();
-        openMenu();
-        closeMenu();
+        setTimeout(() => {
+            var scroll = getLocomotiveScroll();
+            fixedHeader(scroll); //slideLiveProject();
+
+            openMenu();
+            closeMenu();
+        }, 500);
     });
 
 
