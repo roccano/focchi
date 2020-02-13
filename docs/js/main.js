@@ -17,7 +17,7 @@
       document.documentElement.classList.remove("is-loading");
       setTimeout(function () {
         document.documentElement.classList.add("is-ready");
-      }, 100);
+      }, 300);
 
       function getLocomotiveScroll() {
         var scroll = new LocomotiveScroll({

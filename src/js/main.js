@@ -6,7 +6,8 @@ import LocomotiveScroll from "locomotive-scroll";
 
     setTimeout(() => {
         document.documentElement.classList.add("is-ready");
-    }, 100);
+    }, 300);
+
 
     function getLocomotiveScroll() {
         const scroll = new LocomotiveScroll({
@@ -103,6 +104,8 @@ import LocomotiveScroll from "locomotive-scroll";
 
 
 
+
+
     $(document).ready(function() {
         const scroll = getLocomotiveScroll();
         fixedHeader(scroll);
@@ -110,4 +113,6 @@ import LocomotiveScroll from "locomotive-scroll";
         openMenu();
         closeMenu();
     });
+
+
 })();

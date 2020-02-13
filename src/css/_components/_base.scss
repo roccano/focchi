@@ -31,7 +31,7 @@ body {
 }
 
 .app {
-    position: relative;
+    //position: relative;
 }
 
 .hidden {
@@ -96,4 +96,9 @@ img {
         padding-left: 30px !important;
         padding-right: 30px !important;
     }
+}
+
+.fade {
+    opacity: 0;
+    transition: 0.3s opacity;
 }

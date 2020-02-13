@@ -52,9 +52,6 @@ body {
 [for] {
   display: none; }
 
-.app {
-  position: relative; }
-
 .hidden {
   display: none; }
 
@@ -115,6 +112,11 @@ img {
   .container-fluid {
     padding-left: 30px !important;
     padding-right: 30px !important; } }
+
+.fade {
+  opacity: 0;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity; }
 
 body {
   font-family: "sofia-pro", sans-serif;
@@ -306,7 +308,7 @@ strong {
       max-width: calc(100vw - 160px); } }
   @media (min-width: 1920px) {
     .container-fluid {
-      max-width: 1800px; } }
+      max-width: 1460px; } }
 
 .row {
   display: -webkit-box;
@@ -3814,8 +3816,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 20px;
-    height: 40px; }
+    padding: 20px; }
     .sidenav .search-web .title {
       color: #fff;
       padding-bottom: 10px;
@@ -3844,7 +3845,8 @@ ul {
       font-weight: 700;
       letter-spacing: 1px;
       cursor: pointer;
-      margin-top: 10px; }
+      margin-top: 10px;
+      height: 40px; }
   .sidenav a {
     padding: 8px 8px 8px 20px;
     text-decoration: none;
