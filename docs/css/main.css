@@ -2882,7 +2882,7 @@ strong {
 
 @media screen and (max-width: 767.98px) {
   .section--hero, .section--hero-secondary {
-    height: 100vh; }
+    height: 90vh; }
     .section--hero .container, .section--hero-secondary .container {
       padding-top: 0; } }
   @media print {
@@ -3856,6 +3856,10 @@ ul {
       color: #f1f1f1; }
     .sidenav a.active {
       color: #fff; }
+    @media (max-width: 767.98px) {
+      .sidenav a {
+        font-size: 20px;
+        padding: 0 8px 8px 20px; } }
   .sidenav .closebtn {
     position: absolute;
     top: 0;
