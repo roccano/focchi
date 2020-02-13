@@ -75,15 +75,15 @@
           });
         }
       }
+      /*function slideLiveProject() {
+          $(".slide-live-project").slick({
+              centerMode: true,
+              centerPadding: "60px",
+              slidesToShow: 1,
+              infinite: false
+          });
+      }*/
 
-      function slideLiveProject() {
-        $(".slide-live-project").slick({
-          centerMode: true,
-          centerPadding: "60px",
-          slidesToShow: 1,
-          infinite: false
-        });
-      }
 
       function openMenu() {
         $(".menu-mobile a").click(function () {
@@ -111,8 +111,8 @@
 
       $(document).ready(function () {
         var scroll = getLocomotiveScroll();
-        fixedHeader(scroll);
-        slideLiveProject();
+        fixedHeader(scroll); //slideLiveProject();
+
         openMenu();
         closeMenu();
       });

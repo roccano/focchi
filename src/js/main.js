@@ -69,14 +69,14 @@ import LocomotiveScroll from "locomotive-scroll";
         }
     }
 
-    function slideLiveProject() {
+    /*function slideLiveProject() {
         $(".slide-live-project").slick({
             centerMode: true,
             centerPadding: "60px",
             slidesToShow: 1,
             infinite: false
         });
-    }
+    }*/
 
     function openMenu() {
         $(".menu-mobile a").click(function() {
@@ -109,7 +109,7 @@ import LocomotiveScroll from "locomotive-scroll";
     $(document).ready(function() {
         const scroll = getLocomotiveScroll();
         fixedHeader(scroll);
-        slideLiveProject();
+        //slideLiveProject();
         openMenu();
         closeMenu();
     });
