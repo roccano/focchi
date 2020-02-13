@@ -109,6 +109,7 @@
           slidesPerView: 3,
           spaceBetween: 30,
           centeredSlides: true,
+          initialSlide: 1,
           breakpoints: {
             // when window width is >= 320px
             320: {
