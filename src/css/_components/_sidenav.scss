@@ -61,7 +61,7 @@
             position: relative;
             font-family: sofia-pro, sans-serif;
         }
-        input[type="button"] {
+        .btn {
             background: #FF9320;
             padding: 10px;
             border: 0;
@@ -73,7 +73,8 @@
             letter-spacing: 1px;
             cursor: pointer;
             margin-top: 10px;
-            height: 40px;
+            text-align: center;
+            font-size: 14px;
         }
     }
     a {

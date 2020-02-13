@@ -3834,7 +3834,7 @@ ul {
       width: 100%;
       position: relative;
       font-family: sofia-pro, sans-serif; }
-    .sidenav .search-web input[type="button"] {
+    .sidenav .search-web .btn {
       background: #FF9320;
       padding: 10px;
       border: 0;
@@ -3846,7 +3846,8 @@ ul {
       letter-spacing: 1px;
       cursor: pointer;
       margin-top: 10px;
-      height: 40px; }
+      text-align: center;
+      font-size: 14px; }
   .sidenav a {
     padding: 8px 8px 8px 20px;
     text-decoration: none;
