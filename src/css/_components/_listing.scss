@@ -1,0 +1,60 @@
+.section--listing {
+    padding: 100px 0;
+    background: url("/focchi/img/stripes.png") #fff;
+    .item {
+        padding-bottom: 50px;
+        display: block;
+        .title {
+            color: $dark;
+            font-size: 28px;
+            line-height: 54px;
+        }
+        .location {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #707070;
+            font-size: 11px;
+            letter-spacing: 2.5px;
+        }
+    }
+}
+
+.section--filters {
+    background: $dark;
+    .wrap-lv-1 {
+        display: flex;
+        .item {
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 11px;
+                    letter-spacing: 2.5px;
+                    text-transform: uppercase;
+                    a {
+                        color: $grey;
+                        padding: 20px;
+                        display: block;
+                        transition: ease-in-out .3s;
+                        &:hover,
+                        &:focus {
+                            background: $grey;
+                            color: #fff;
+                            transition: ease-in-out .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section--load-more-projects {
+    background: url("/focchi/img/stripes.png") #bebebf;
+    padding: 50px 0;
+    text-align: center;
+}
