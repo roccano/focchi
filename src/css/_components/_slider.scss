@@ -8,9 +8,9 @@
 
 .swiper-container {
     padding: 100px 0;
+    height: 600px;
     .swiper-slide {
-        display: flex;
-        align-items: center;
+        img {}
         &.swiper-slide--video {
             position: relative;
             a {

@@ -107,6 +107,55 @@ import LocomotiveScroll from "locomotive-scroll";
         });
     }
 
+    function openSidePanel() {
+        if ($(window).width() < 767) {
+            $("#side-link").click(function() {
+                $('.side-panel').css("width", "100%");
+            });
+        } else {
+            $("#side-link").click(function() {
+                $('.side-panel').css("width", "100%");
+            });
+        }
+    }
+
+    function closeSidePanel() {
+        $(".side-panel .closebtn").click(function() {
+            $('.side-panel').css("width", "0");
+        });
+    }
+
+    function homeBackground() {
+        $('#m-projects').hover(function() {
+            $(".bg-1").hide();
+            $(".bg-2").show();
+        }, function() {
+            $(".bg-2").hide();
+            $(".bg-1").show();
+        })
+        $('#m-process').hover(function() {
+            $(".bg-1").hide();
+            $(".bg-3").show();
+        }, function() {
+            $(".bg-1").show();
+            $(".bg-3").hide();
+        })
+        $('#m-technology').hover(function() {
+            $(".bg-1").hide();
+            $(".bg-4").show();
+        }, function() {
+            $(".bg-1").show();
+            $(".bg-4").hide();
+        })
+        $('#m-group').hover(function() {
+            $(".bg-1").hide();
+            $(".bg-5").show();
+        }, function() {
+            $(".bg-1").show();
+            $(".bg-5").hide();
+        })
+    }
+
     window.onload = function() {
         //initialize swiper when document ready
         var mySwiper = new Swiper('.swiper-container', {
@@ -114,13 +163,9 @@ import LocomotiveScroll from "locomotive-scroll";
             direction: 'horizontal',
             loop: true,
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 150,
             centeredSlides: true,
             initialSlide: 1,
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
             breakpoints: {
                 // when window width is >= 320px
                 320: {
@@ -135,7 +180,7 @@ import LocomotiveScroll from "locomotive-scroll";
                 // when window width is >= 640px
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 30
+                    spaceBetween: 150
                 }
             }
         })
@@ -143,10 +188,12 @@ import LocomotiveScroll from "locomotive-scroll";
 
     setTimeout(() => {
         var scroll = getLocomotiveScroll();
-        fixedHeader(scroll); //slideLiveProject();
-
+        fixedHeader(scroll);
+        homeBackground();
         openMenu();
         closeMenu();
+        openSidePanel();
+        closeSidePanel();
     }, 500);
 
 })();
