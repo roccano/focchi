@@ -85,12 +85,15 @@ import LocomotiveScroll from "locomotive-scroll";
         } else {
             $(".menu-mobile a").click(function() {
                 $('#menuSidenav').css("width", "250px");
+                $('.black-layer').fadeIn();
             });
             $(".search-menu a").click(function() {
                 $('#menuSidenav').css("width", "250px");
+                $('.black-layer').fadeIn();
             });
             $(".lang-menu a").click(function() {
                 $('#menuSidenav').css("width", "250px");
+                $('.black-layer').fadeIn();
             });
         }
     }
@@ -98,12 +101,15 @@ import LocomotiveScroll from "locomotive-scroll";
     function closeMenu() {
         $(".sidenav .closebtn").click(function() {
             $('#menuSidenav').css("width", "0");
+            $('.black-layer').fadeOut();
         });
         $(".search-sidenav .closebtn").click(function() {
             $('#menuSidenav').css("width", "0");
+            $('.black-layer').fadeOut();
         });
         $(".lang-sidenav .closebtn").click(function() {
             $('#menuSidenav').css("width", "0");
+            $('.black-layer').fadeOut();
         });
     }
 
@@ -115,6 +121,7 @@ import LocomotiveScroll from "locomotive-scroll";
         } else {
             $("#side-link").click(function() {
                 $('.side-panel').css("width", "100%");
+                $('.black-layer').fadeIn();
             });
         }
     }
@@ -122,6 +129,7 @@ import LocomotiveScroll from "locomotive-scroll";
     function closeSidePanel() {
         $(".side-panel .closebtn").click(function() {
             $('.side-panel').css("width", "0");
+            $('.black-layer').fadeOut();
         });
     }
 
