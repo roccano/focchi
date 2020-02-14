@@ -77,15 +77,27 @@
       }
 
       function openMenu() {
-        $(".menu-mobile a").click(function () {
-          $('#menuSidenav').css("width", "250px");
-        });
-        $(".search-menu a").click(function () {
-          $('#menuSidenav').css("width", "250px");
-        });
-        $(".lang-menu a").click(function () {
-          $('#menuSidenav').css("width", "250px");
-        });
+        if ($(window).width() < 767) {
+          $(".menu-mobile a").click(function () {
+            $('#menuSidenav').css("width", "100%");
+          });
+          $(".search-menu a").click(function () {
+            $('#menuSidenav').css("width", "100%");
+          });
+          $(".lang-menu a").click(function () {
+            $('#menuSidenav').css("width", "100%");
+          });
+        } else {
+          $(".menu-mobile a").click(function () {
+            $('#menuSidenav').css("width", "250px");
+          });
+          $(".search-menu a").click(function () {
+            $('#menuSidenav').css("width", "250px");
+          });
+          $(".lang-menu a").click(function () {
+            $('#menuSidenav').css("width", "250px");
+          });
+        }
       }
 
       function closeMenu() {
@@ -105,11 +117,15 @@
         var mySwiper = new Swiper('.swiper-container', {
           // Optional parameters
           direction: 'horizontal',
-          loop: false,
+          loop: true,
           slidesPerView: 3,
           spaceBetween: 30,
           centeredSlides: true,
           initialSlide: 1,
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar'
+          },
           breakpoints: {
             // when window width is >= 320px
             320: {

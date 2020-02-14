@@ -1,0 +1,35 @@
+.swiper-container-horizontal>.swiper-scrollbar {
+    position: relative;
+    bottom: -17px;
+    @include media-breakpoint-down(sm) {
+        bottom: -30px !important;
+    }
+}
+
+.swiper-container {
+    padding: 100px 0;
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        &.swiper-slide--video {
+            position: relative;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon-play {
+                    position: absolute;
+                    width: 50px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .swiper-scrollbar {
+        position: relative;
+        bottom: -17px;
+    }
+    .swiper-scrollbar-drag {
+        background: #ff9320;
+    }
+}

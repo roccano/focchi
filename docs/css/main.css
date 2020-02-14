@@ -113,26 +113,6 @@ img {
     padding-left: 30px !important;
     padding-right: 30px !important; } }
 
-.swiper-container {
-  padding: 50px 0;
-  height: 600px; }
-  @media (max-width: 1439.98px) {
-    .swiper-container {
-      height: 500px; } }
-  @media (max-width: 1023.98px) {
-    .swiper-container {
-      height: 400px; } }
-  @media (max-width: 767.98px) {
-    .swiper-container {
-      height: 300px; } }
-  .swiper-container .swiper-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-
 html:not(.has-scroll-init) {
   position: fixed;
   overflow: hidden;
@@ -2756,6 +2736,11 @@ strong {
   position: relative;
   top: 5px; }
 
+.icon--times {
+  width: 18px;
+  height: 18px;
+  fill: #fff; }
+
 @media screen {
   [appear]:not(.print) {
     opacity: 0 !important;
@@ -3975,6 +3960,44 @@ ul {
     padding-top: 0; }
   .lang-sidenav a {
     font-size: 18px; } }
+
+.swiper-container-horizontal > .swiper-scrollbar {
+  position: relative;
+  bottom: -17px; }
+  @media (max-width: 1023.98px) {
+    .swiper-container-horizontal > .swiper-scrollbar {
+      bottom: -30px !important; } }
+
+.swiper-container {
+  padding: 100px 0; }
+  .swiper-container .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .swiper-container .swiper-slide.swiper-slide--video {
+      position: relative; }
+      .swiper-container .swiper-slide.swiper-slide--video a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .swiper-container .swiper-slide.swiper-slide--video a .icon-play {
+          position: absolute;
+          width: 50px;
+          height: auto; }
+  .swiper-container .swiper-scrollbar {
+    position: relative;
+    bottom: -17px; }
+  .swiper-container .swiper-scrollbar-drag {
+    background: #ff9320; }
 
 .card--slide {
   position: relative;

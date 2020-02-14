@@ -98,14 +98,6 @@ img {
     }
 }
 
-.swiper-container {
-    padding: 50px 0;
-    .swiper-slide {
-        display: flex;
-        align-items: center;
-    }
-}
-
 html:not(.has-scroll-init) {
     position: fixed;
     overflow: hidden;

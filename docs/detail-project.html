@@ -41,12 +41,22 @@
 		<path d="M30,28.6l-7.4-7.4c4.6-5.4,4-13.5-1.4-18.1S7.7-0.9,3.1,4.5s-4,13.5,1.4,18.1c4.8,4.1,11.9,4.1,16.7,0l7.4,7.4L30,28.6z
 	 M2,12.8C2,6.9,6.9,2,12.8,2s10.8,4.9,10.8,10.8s-4.9,10.8-10.8,10.8C6.9,23.7,2,18.8,2,12.8z"/>
 	</symbol>
+	<symbol viewBox="0 0 32 32" id="times">
+		<path d="M1.4,0C0.6,0,0,0.6,0,1.4c0,0.4,0.2,0.7,0.4,1L14,16
+	L0.4,29.6c-0.6,0.5-0.6,1.4,0,2c0.5,0.6,1.4,0.6,2,0c0,0,0,0,0,0L16,18l13.6,13.6c0.5,0.6,1.4,0.6,2,0c0.6-0.5,0.6-1.4,0-2
+	c0,0,0,0,0,0L18,16L31.6,2.4c0.6-0.5,0.6-1.4,0-2C31.3,0.1,31,0,30.6,0c-0.4,0-0.7,0.2-1,0.4L16,14L2.4,0.4C2.1,0.2,1.8,0,1.4,0
+	L1.4,0z"/>
+	</symbol>
 </svg>
 <!-- end svg.html-->
 <!-- start menu-sidenav.html-->
 <!-- Sidenav -->
 <div id="menuSidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="javascript:void(0)" class="closebtn">
+        <svg class="icon icon--times">
+            <use xlink:href="#times"></use>
+        </svg>
+    </a>
     <div class="menu-mobile">
 
         <a href="projects.html" class="active">Projects</a>
@@ -302,8 +312,9 @@
                 <img src="/focchi/img/projects/live-project-1.jpg" />
             </a>
         </div>
-        <div class="swiper-slide">
-            <a href="/focchi/img/projects/live-project-2.jpg" data-fancybox="nome-progetto" data-caption="Caption for single image">
+        <div class="swiper-slide swiper-slide--video">
+            <a href="https://www.youtube.com/watch?v=LlclNIgPDaw" data-fancybox="nome-progetto" data-caption="Caption for single image">
+                <img class="icon-play" src="/focchi/img/play.png" />
                 <img src="/focchi/img/projects/live-project-2.jpg" />
             </a>
         </div>
@@ -313,6 +324,9 @@
             </a>
         </div>
     </div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
 </div>
 <!-- end slider-project.html-->
     <div class="container-fluid">
