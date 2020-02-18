@@ -169,6 +169,45 @@
         });
       }
 
+      function projectsFilters() {
+        $(".wrap-lv-1 a[data-link='tipology']").click(function () {
+          $(this).toggleClass("active");
+          $(".m-tipology").toggleClass("open");
+          $(".wrap-lv-1 a").not("[data-link='tipology']").removeClass("active");
+          $(".wrap-lv-2").not(".m-tipology").removeClass("open");
+        });
+        $(".wrap-lv-1 a[data-link='size']").click(function () {
+          $(this).toggleClass("active");
+          $(".m-size").toggleClass("open");
+          $(".wrap-lv-1 a").not("[data-link='size']").removeClass("active");
+          $(".wrap-lv-2").not(".m-size").removeClass("open");
+        });
+        $(".wrap-lv-1 a[data-link='status']").click(function () {
+          $(this).toggleClass("active");
+          $(".m-status").toggleClass("open");
+          $(".wrap-lv-1 a").not("[data-link='status']").removeClass("active");
+          $(".wrap-lv-2").not(".m-status").removeClass("open");
+        });
+        $(".wrap-lv-1 a[data-link='location']").click(function () {
+          $(this).toggleClass("active");
+          $(".m-location").toggleClass("open");
+          $(".wrap-lv-1 a").not("[data-link='location']").removeClass("active");
+          $(".wrap-lv-2").not(".m-location").removeClass("open");
+        });
+        $(".wrap-lv-1 a[data-link='architect']").click(function () {
+          $(this).toggleClass("active");
+          $(".m-architect").toggleClass("open");
+          $(".wrap-lv-1 a").not("[data-link='architect']").removeClass("active");
+          $(".wrap-lv-2").not(".m-architect").removeClass("open");
+        });
+        $(".wrap-lv-1 a[data-link='technology']").click(function () {
+          $(this).toggleClass("active");
+          $(".m-technology").toggleClass("open");
+          $(".wrap-lv-1 a").not("[data-link='technology']").removeClass("active");
+          $(".wrap-lv-2").not(".m-technology").removeClass("open");
+        });
+      }
+
       window.onload = function () {
         //initialize swiper when document ready
         var mySwiper = new Swiper('.swiper-container', {
@@ -207,6 +246,7 @@
         closeMenu();
         openSidePanel();
         closeSidePanel();
+        projectsFilters();
       }, 500);
     })();
 

@@ -149,6 +149,10 @@
                         font-size: 80px;
                         line-height: 100px;
                         transition: all 0.3s ease-in-out;
+                        @media screen and (min-width: 640px) and (max-width: 1024px) {
+                            font-size: 40px;
+                            line-height: 60px;
+                        }
                         @include media-breakpoint-down(sm) {
                             font-size: 60px;
                             line-height: 80px;
@@ -242,6 +246,7 @@
             padding: 30px;
             .title {
                 font-size: 48px;
+                line-height: 60px;
             }
         }
     }

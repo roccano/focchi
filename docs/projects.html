@@ -47,6 +47,10 @@
 	c0,0,0,0,0,0L18,16L31.6,2.4c0.6-0.5,0.6-1.4,0-2C31.3,0.1,31,0,30.6,0c-0.4,0-0.7,0.2-1,0.4L16,14L2.4,0.4C2.1,0.2,1.8,0,1.4,0
 	L1.4,0z"/>
 	</symbol>
+	<symbol viewBox="0 0 13.2 13.2" id="dropdown">
+		<path id="Path_14329_2_" d="M0.4,6.3l6.3,6.3l6.3-6.3"/>
+		<path id="Path_14332_2_" d="M6.6,0.7v11.6"/>
+	</symbol>
 </svg>
 <!-- end svg.html-->
 <!-- start menu-sidenav.html-->
@@ -182,23 +186,149 @@
 <!-- /Hero -->
 <!-- Filters -->
 <section class="section--filters">
-    <div class="container-fluid">
-        <div class="wrap-lv-1">
-            <div class="item">
-                <ul>
-                    <li>Filter by:</li>
-                    <li><a href="javascript:void(0)">Tipology</a></li>
-                    <li><a href="javascript:void(0)">Size</a></li>
-                    <li><a href="javascript:void(0)">Status</a></li>
-                    <li><a href="javascript:void(0)">Tipology</a></li>
-                    <li><a href="javascript:void(0)">Status</a></li>
-                    <li><a href="javascript:void(0)">Location</a></li>
-                    <li><a href="javascript:void(0)">Architect</a></li>
-                    <li><a href="javascript:void(0)">Technology</a></li>
-                </ul>
-            </div>
-            <div class="item"></div>
+    <div class="wrap-lv-1">
+        <div class="item">
+            <ul>
+                <li><span class="tit">Filter by:</span></li>
+                <li><a data-link="tipology" href="javascript:void(0)">
+                        Tipology 
+                        <svg class="icon icon--dropdown">
+                            <use xlink:href="#dropdown"></use>
+                        </svg>
+                    </a></li>
+                <li><a data-link="size" href="javascript:void(0)">
+                        Size
+                        <svg class="icon icon--dropdown">
+                            <use xlink:href="#dropdown"></use>
+                        </svg></a></li>
+                <li><a data-link="status" href="javascript:void(0)">
+                        Status
+                        <svg class="icon icon--dropdown">
+                            <use xlink:href="#dropdown"></use>
+                        </svg></a></li>
+                <li><a data-link="status" href="javascript:void(0)">
+                        Status
+                        <svg class="icon icon--dropdown">
+                            <use xlink:href="#dropdown"></use>
+                        </svg></a></li>
+                <li><a data-link="location" href="javascript:void(0)">
+                        Location
+                        <svg class="icon icon--dropdown">
+                            <use xlink:href="#dropdown"></use>
+                        </svg></a></li>
+                <li><a data-link="architect" href="javascript:void(0)">
+                        Architect
+                        <svg class="icon icon--dropdown">
+                            <use xlink:href="#dropdown"></use>
+                        </svg></a></li>
+                <li><a data-link="technology" href="javascript:void(0)">
+                        Technology
+                        <svg class="icon icon--dropdown">
+                            <use xlink:href="#dropdown"></use>
+                        </svg></a></li>
+            </ul>
         </div>
+        <div class="item">
+            <ul>
+                <li><span class="tit">Order by:</span></li>
+                <li>
+                    <label class="radio-container">Featured
+                        <input type="radio" id="opt1" name="radio" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-container">Latest
+                        <input type="radio" id="opt2" name="radio" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap-lv-2 m-tipology">
+        <ul>
+            <li>
+                <label class="radio-container">Residential
+                    <input type="radio" id="opt3" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="radio-container">Cultural
+                    <input type="radio" id="opt4" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="radio-container">Hotels
+                    <input type="radio" id="opt5" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="radio-container">Private House
+                    <input type="radio" id="opt6" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="radio-container">Commercial
+                    <input type="radio" id="opt7" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <div class="wrap-lv-2 m-size">
+        <ul>
+            <li>
+                <label class="radio-container">Size Option
+                    <input type="radio" id="opt3" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <div class="wrap-lv-2 m-status">
+        <ul>
+            <li>
+                <label class="radio-container">Status Option
+                    <input type="radio" id="opt3" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <div class="wrap-lv-2 m-location">
+        <ul>
+            <li>
+                <label class="radio-container">Location Option
+                    <input type="radio" id="opt3" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <div class="wrap-lv-2 m-architect">
+        <ul>
+            <li>
+                <label class="radio-container">Architect Option
+                    <input type="radio" id="opt3" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <div class="wrap-lv-2 m-technology">
+        <ul>
+            <li>
+                <label class="radio-container">Technology Option
+                    <input type="radio" id="opt3" name="radio" value="1">
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+        </ul>
     </div>
 </section>
 <!-- /Filters -->
