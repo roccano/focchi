@@ -107,21 +107,63 @@
     }
     &.hero--home {
         position: relative;
+        background-color: #28292b;
         @media screen and (max-width: 812px) and (orientation: landscape) {
             height: 130vh;
         }
         .background {
-            img {
-                opacity: 0.5;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background: url('/img/home/bg-home.jpg');
+            opacity: 0.5;
+            &.projects {
+                background: url("/img/home/bg-projects.jpg");
+                -webkit-animation-name: fadeIn;
+                -webkit-animation-duration: .4s;
+                animation-name: fadeIn;
+                animation-duration: .4s;
+            }
+            &.process {
+                background: url("/img/home/bg-process.jpg");
+                -webkit-animation-name: fadeIn;
+                -webkit-animation-duration: .4s;
+                animation-name: fadeIn;
+                animation-duration: .4s;
+            }
+            &.technology {
+                background: url("/img/home/bg-technology.jpg");
+                -webkit-animation-name: fadeIn;
+                -webkit-animation-duration: .4s;
+                animation-name: fadeIn;
+                animation-duration: .4s;
+            }
+            &.group {
+                background: url("/img/home/bg-group.jpg");
+                -webkit-animation-name: fadeIn;
+                -webkit-animation-duration: .4s;
+                animation-name: fadeIn;
+                animation-duration: .4s;
             }
             .bg-1 {
                 display: block;
+                opacity: 0.5;
+                transition: opacity 0.5s ease-in-out;
+                &.transparent {
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+                }
             }
             .bg-2,
             .bg-3,
             .bg-4,
             .bg-5 {
-                display: none;
+                opacity: 0.5;
+                transition: opacity 0.5s ease-in-out;
+                &.transparent {
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+                }
             }
         }
         .caption {
@@ -278,5 +320,47 @@
         fill: white;
         animation: down-soft 1.8s both infinite;
         animation-delay: 3s;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0.2;
+    }
+    60% {
+        opacity: 0.3;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0.2;
+    }
+    60% {
+        opacity: 0.3;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.5;
     }
 }

@@ -135,32 +135,24 @@ import LocomotiveScroll from "locomotive-scroll";
 
     function homeBackground() {
         $('#m-projects').hover(function() {
-            $(".bg-1").hide();
-            $(".bg-2").show();
+            $(".background").addClass('projects');
         }, function() {
-            $(".bg-2").hide();
-            $(".bg-1").show();
+            $(".background").removeClass('projects');
         })
         $('#m-process').hover(function() {
-            $(".bg-1").hide();
-            $(".bg-3").show();
+            $(".background").addClass('process');
         }, function() {
-            $(".bg-1").show();
-            $(".bg-3").hide();
+            $(".background").removeClass('process');
         })
         $('#m-technology').hover(function() {
-            $(".bg-1").hide();
-            $(".bg-4").show();
+            $(".background").addClass('technology');
         }, function() {
-            $(".bg-1").show();
-            $(".bg-4").hide();
+            $(".background").removeClass('technology');
         })
         $('#m-group').hover(function() {
-            $(".bg-1").hide();
-            $(".bg-5").show();
+            $(".background").addClass('group');
         }, function() {
-            $(".bg-1").show();
-            $(".bg-5").hide();
+            $(".background").removeClass('group');
         })
     }
 

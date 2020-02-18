@@ -2977,19 +2977,64 @@ strong {
       padding: 40px; } }
 
 .section--hero.hero--home {
-  position: relative; }
+  position: relative;
+  background-color: #28292b; }
   @media screen and (max-width: 812px) and (orientation: landscape) {
     .section--hero.hero--home {
       height: 130vh; } }
-  .section--hero.hero--home .background img {
+  .section--hero.hero--home .background {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url("/img/home/bg-home.jpg");
     opacity: 0.5; }
-  .section--hero.hero--home .background .bg-1 {
-    display: block; }
-  .section--hero.hero--home .background .bg-2,
-  .section--hero.hero--home .background .bg-3,
-  .section--hero.hero--home .background .bg-4,
-  .section--hero.hero--home .background .bg-5 {
-    display: none; }
+    .section--hero.hero--home .background.projects {
+      background: url("/img/home/bg-projects.jpg");
+      -webkit-animation-name: fadeIn;
+      -webkit-animation-duration: .4s;
+      animation-name: fadeIn;
+      animation-duration: .4s; }
+    .section--hero.hero--home .background.process {
+      background: url("/img/home/bg-process.jpg");
+      -webkit-animation-name: fadeIn;
+      -webkit-animation-duration: .4s;
+      animation-name: fadeIn;
+      animation-duration: .4s; }
+    .section--hero.hero--home .background.technology {
+      background: url("/img/home/bg-technology.jpg");
+      -webkit-animation-name: fadeIn;
+      -webkit-animation-duration: .4s;
+      animation-name: fadeIn;
+      animation-duration: .4s; }
+    .section--hero.hero--home .background.group {
+      background: url("/img/home/bg-group.jpg");
+      -webkit-animation-name: fadeIn;
+      -webkit-animation-duration: .4s;
+      animation-name: fadeIn;
+      animation-duration: .4s; }
+    .section--hero.hero--home .background .bg-1 {
+      display: block;
+      opacity: 0.5;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.5s ease-in-out; }
+      .section--hero.hero--home .background .bg-1.transparent {
+        opacity: 0;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out; }
+    .section--hero.hero--home .background .bg-2,
+    .section--hero.hero--home .background .bg-3,
+    .section--hero.hero--home .background .bg-4,
+    .section--hero.hero--home .background .bg-5 {
+      opacity: 0.5;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.5s ease-in-out; }
+      .section--hero.hero--home .background .bg-2.transparent,
+      .section--hero.hero--home .background .bg-3.transparent,
+      .section--hero.hero--home .background .bg-4.transparent,
+      .section--hero.hero--home .background .bg-5.transparent {
+        opacity: 0;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out; }
   .section--hero.hero--home .caption {
     position: relative;
     left: 0;
@@ -3141,6 +3186,34 @@ strong {
             animation: down-soft 1.8s both infinite;
     -webkit-animation-delay: 3s;
             animation-delay: 3s; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0.1; }
+  40% {
+    opacity: 0.2; }
+  60% {
+    opacity: 0.3; }
+  80% {
+    opacity: 0.4; }
+  100% {
+    opacity: 0.5; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0.1; }
+  40% {
+    opacity: 0.2; }
+  60% {
+    opacity: 0.3; }
+  80% {
+    opacity: 0.4; }
+  100% {
+    opacity: 0.5; } }
 
 ul {
   margin: 30px 0;
