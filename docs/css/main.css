@@ -2983,31 +2983,31 @@ strong {
     .section--hero.hero--home {
       height: 130vh; } }
   .section--hero.hero--home .background {
+    background-image: url("/focchi/img/home/bg-home.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background: url("/focchi/img/home/bg-home.jpg");
     opacity: 0.5; }
     .section--hero.hero--home .background.projects {
-      background: url("/focchi/img/home/bg-projects.jpg");
+      background-image: url("/focchi/img/home/bg-projects.jpg");
       -webkit-animation-name: fadeIn;
       -webkit-animation-duration: .4s;
       animation-name: fadeIn;
       animation-duration: .4s; }
     .section--hero.hero--home .background.process {
-      background: url("/focchi/img/home/bg-process.jpg");
+      background-image: url("/focchi/img/home/bg-process.jpg");
       -webkit-animation-name: fadeIn;
       -webkit-animation-duration: .4s;
       animation-name: fadeIn;
       animation-duration: .4s; }
     .section--hero.hero--home .background.technology {
-      background: url("/focchi/img/home/bg-technology.jpg");
+      background-image: url("/focchi/img/home/bg-technology.jpg");
       -webkit-animation-name: fadeIn;
       -webkit-animation-duration: .4s;
       animation-name: fadeIn;
       animation-duration: .4s; }
     .section--hero.hero--home .background.group {
-      background: url("/focchi/img/home/bg-group.jpg");
+      background-image: url("/focchi/img/home/bg-group.jpg");
       -webkit-animation-name: fadeIn;
       -webkit-animation-duration: .4s;
       animation-name: fadeIn;
