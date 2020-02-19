@@ -2964,7 +2964,8 @@ strong {
 
 @media (min-width: 1024px) {
   .section--hero {
-    height: 100vh; } }
+    height: 100vh;
+    display: block; } }
 
 .section--hero .caption {
   position: absolute;

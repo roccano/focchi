@@ -94,6 +94,7 @@
     @extend %section--hero-title;
     @include media-breakpoint-up(md) {
         height: 100vh;
+        display: block;
     }
     .caption {
         position: absolute;
