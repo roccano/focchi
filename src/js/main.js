@@ -195,16 +195,26 @@ import LocomotiveScroll from "locomotive-scroll";
         });
     }
 
+    function hoverImage() {
+        $(".projects .image").mouseover(function() {
+            $(this).find(".default").hide();
+            $(this).find(".hover").show();
+        });
+        $(".projects .image").mouseout(function() {
+            $(this).find(".hover").hide();
+            $(this).find(".default").show();
+        });
+    }
+
     window.onload = function() {
         //initialize swiper when document ready
         var mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
-            slidesPerView: 3,
-            spaceBetween: 150,
+            slidesPerView: 1,
+            spaceBetween: 40,
             centeredSlides: true,
-            initialSlide: 1,
             breakpoints: {
                 // when window width is >= 320px
                 320: {
@@ -213,12 +223,12 @@ import LocomotiveScroll from "locomotive-scroll";
                 },
                 // when window width is >= 480px
                 480: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 30
                 },
                 // when window width is >= 640px
                 768: {
-                    slidesPerView: 3,
+                    slidesPerView: 1,
                     spaceBetween: 150
                 }
             }
@@ -234,6 +244,7 @@ import LocomotiveScroll from "locomotive-scroll";
         openSidePanel();
         closeSidePanel();
         projectsFilters();
+        hoverImage();
     }, 500);
 
 })();

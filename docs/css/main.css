@@ -4099,6 +4099,12 @@ ul {
           .section--filters .wrap-lv-2 ul li .radio-container:hover input ~ .checkmark {
             background-color: #fff; }
 
+.section--listing.projects .item .image .default {
+  display: block; }
+
+.section--listing.projects .item .image .hover {
+  display: none; }
+
 .section--load-more-projects {
   background: url("/focchi/img/stripes.png") #bebebf;
   padding: 50px 0;
@@ -4431,7 +4437,7 @@ ul {
 
 .swiper-container {
   padding: 100px 0;
-  height: 600px; }
+  overflow: visible; }
   .swiper-container .swiper-slide.swiper-slide--video {
     position: relative; }
     .swiper-container .swiper-slide.swiper-slide--video a {

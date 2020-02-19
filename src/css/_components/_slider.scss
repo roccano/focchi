@@ -8,7 +8,7 @@
 
 .swiper-container {
     padding: 100px 0;
-    height: 600px;
+    overflow: visible;
     .swiper-slide {
         img {}
         &.swiper-slide--video {

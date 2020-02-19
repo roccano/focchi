@@ -214,6 +214,21 @@
     }
 }
 
+.section--listing {
+    &.projects {
+        .item {
+            .image {
+                .default {
+                    display: block;
+                }
+                .hover {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 .section--load-more-projects {
     background: url("/focchi/img/stripes.png") #bebebf;
     padding: 50px 0;
