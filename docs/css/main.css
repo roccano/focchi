@@ -2986,28 +2986,28 @@ strong {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background: url("/img/home/bg-home.jpg");
+    background: url("/focchi/img/home/bg-home.jpg");
     opacity: 0.5; }
     .section--hero.hero--home .background.projects {
-      background: url("/img/home/bg-projects.jpg");
+      background: url("/focchi/img/home/bg-projects.jpg");
       -webkit-animation-name: fadeIn;
       -webkit-animation-duration: .4s;
       animation-name: fadeIn;
       animation-duration: .4s; }
     .section--hero.hero--home .background.process {
-      background: url("/img/home/bg-process.jpg");
+      background: url("/focchi/img/home/bg-process.jpg");
       -webkit-animation-name: fadeIn;
       -webkit-animation-duration: .4s;
       animation-name: fadeIn;
       animation-duration: .4s; }
     .section--hero.hero--home .background.technology {
-      background: url("/img/home/bg-technology.jpg");
+      background: url("/focchi/img/home/bg-technology.jpg");
       -webkit-animation-name: fadeIn;
       -webkit-animation-duration: .4s;
       animation-name: fadeIn;
       animation-duration: .4s; }
     .section--hero.hero--home .background.group {
-      background: url("/img/home/bg-group.jpg");
+      background: url("/focchi/img/home/bg-group.jpg");
       -webkit-animation-name: fadeIn;
       -webkit-animation-duration: .4s;
       animation-name: fadeIn;
