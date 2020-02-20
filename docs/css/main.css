@@ -4100,11 +4100,15 @@ ul {
           .section--filters .wrap-lv-2 ul li .radio-container:hover input ~ .checkmark {
             background-color: #fff; }
 
-.section--listing.projects .item .image .default {
-  display: block; }
-
-.section--listing.projects .item .image .hover {
-  display: none; }
+.section--listing.projects .item .image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out; }
+  .section--listing.projects .item .image img {
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out; }
 
 .section--load-more-projects {
   background: url("/focchi/img/stripes.png") #bebebf;

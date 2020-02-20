@@ -197,12 +197,10 @@ import LocomotiveScroll from "locomotive-scroll";
 
     function hoverImage() {
         $(".projects .image").mouseover(function() {
-            $(this).find(".default").hide();
-            $(this).find(".hover").show();
+            $(this).find("img").css("opacity", "0");
         });
         $(".projects .image").mouseout(function() {
-            $(this).find(".hover").hide();
-            $(this).find(".default").show();
+            $(this).find("img").css("opacity", "1");
         });
     }
 
