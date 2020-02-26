@@ -1,0 +1,108 @@
+<!-- @@master = ./templates/layout.html-->
+
+<!-- @@block = header-->
+<!-- @@include ./templates/shared/header.html -->
+<!-- @@close-->
+
+<!-- @@block = main-->
+<!-- Hero -->
+<section class="section--hero hero-contact" id="hero">
+    <div class="background">
+        <img src="/focchi/img/contacts/hero-contacts.jpg" />
+    </div>
+    <div class="container-fluid">
+        <div class="caption">
+            <div class="row">
+                <div class="col-xl-7 col-lg-6 col-md-6 col-sm-8" data-scroll-repeat data-scroll data-scroll-speed="-6" data-scroll-position="top" data-scroll-target="#hero">
+                    <div class="title">Take your time to get in touch.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Hero -->
+<!-- Contact Form -->
+<section class="section--contact-form">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-info">
+                <div class="contacts--logo">
+                    <a href="/focchi/">
+                        <img src="/focchi/img/contacts/logo-contacts.png" alt="Focchi">
+                    </a>
+                </div>
+                <div class="contacts--address">
+                    <p>Focchi Spa</p>
+                    <p>Via Cornacchiara, 805,</p>
+                    <p>47824 Poggio Torriana (RN)</p>
+                    <p>tel. +39 0541 627355</p>
+                    <p>fax +39 0541 686546</p>
+                </div>
+                <div class="contacts--maps">
+                    <a href="#" class="btn btn--icon">
+                        <svg class="icon icon--location">
+                            <use xlink:href="#location"></use>
+                        </svg>
+                        <span>SEE ON MAPS</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-8 offset-xl-1 col-lg-8 offset-lg-1 col-md-8 offset-md-1">
+                <form action="#">
+                    <div class="item">
+                        <input type="text" id="name" name="name" placeholder="Enter your name and surname">
+                    </div>
+                    <div class="item">
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="item">
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+                    </div>
+                    <div class="item">
+                        <select id="cars">
+                            <option selected disabled>Request information for ..</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="support">Support</option>
+                          </select>
+                    </div>
+                    <div class="item-full">
+                        <textarea placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="item-full">
+                        <div class="contacts--check">
+                            <label class="check-container">Privacy: read the <a href="#">policy</a>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="contacts--check">
+                            <label class="check-container">I agree to marketing activities and third parties <a href="#">Read the information</a>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-full">
+                        <input type="submit" class="btn--link" value="SEND YOUR REQUEST">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Contact Form -->
+<!-- Contact Work Us -->
+<section class="section--contact-work-us">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="caption">
+                    <h3>Do you want to work with us?</h3>
+                    <a href="mailto:jobs@focchi.it" class="btn--link">jobs@focchi.it</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Contact Work Us -->
+<!-- @@close-->

@@ -216,6 +216,13 @@
 
 .section--listing {
     &.projects {
+        [data-scroll] {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            &.is-inview {
+                opacity: 1;
+            }
+        }
         .item {
             .image {
                 background-position: center;
