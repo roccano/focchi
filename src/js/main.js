@@ -204,6 +204,16 @@ import LocomotiveScroll from "locomotive-scroll";
         });
     }
 
+    function anchorLink() {
+
+        $("[data-anchor='one']").click(function() {
+            $('html').animate({
+                scrollTop: $("[data-section='one']").offset().top
+            }, 'slow');
+        })
+
+    }
+
     window.onload = function() {
         //initialize swiper when document ready
         var mySwiper = new Swiper('.swiper-container', {
@@ -233,6 +243,7 @@ import LocomotiveScroll from "locomotive-scroll";
         })
     };
 
+
     setTimeout(() => {
         var scroll = getLocomotiveScroll();
         fixedHeader(scroll);
@@ -243,6 +254,7 @@ import LocomotiveScroll from "locomotive-scroll";
         closeSidePanel();
         projectsFilters();
         hoverImage();
+        anchorLink();
     }, 500);
 
 })();

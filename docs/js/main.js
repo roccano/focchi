@@ -209,6 +209,14 @@
         });
       }
 
+      function anchorLink() {
+        $("[data-anchor='one']").click(function () {
+          $('html').animate({
+            scrollTop: $("[data-section='one']").offset().top
+          }, 'slow');
+        });
+      }
+
       window.onload = function () {
         //initialize swiper when document ready
         var mySwiper = new Swiper('.swiper-container', {
@@ -248,6 +256,7 @@
         closeSidePanel();
         projectsFilters();
         hoverImage();
+        anchorLink();
       }, 500);
     })();
 
