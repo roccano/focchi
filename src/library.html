@@ -24,17 +24,18 @@
             <ul>
                 <li><span class="tit">View: </span></li>
                 <li>
-                    <a data-link="tipology" href="javascript:void(0)">All</a>
+                    <a class="active" data-link="all" href="javascript:void(0)">All</a>
                 </li>
                 <li>
-                    <a data-link="tipology" href="javascript:void(0)">News & Press</a>
+                    <a data-link="news-press" href="javascript:void(0)">News & Press</a>
                 </li>
                 <li>
-                    <a data-link="tipology" href="javascript:void(0)">Special Books</a>
+                    <a data-link="monographs" href="javascript:void(0)">Monographs</a>
                 </li>
                 <li>
-                    <a data-link="tipology" href="javascript:void(0)">Monographs</a>
+                    <a data-link="special-books" href="javascript:void(0)">Special Books</a>
                 </li>
+
             </ul>
         </div>
     </div>
@@ -44,7 +45,7 @@
 <section class="section--listing listing-library">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4" id="news-press">
                 <div class="title">News & Press</div>
                 <a href="/focchi/detail-library.html" class="item">
                     <div class="image">
@@ -80,7 +81,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-sm-3 offset-sm-1">
+            <div class="col-sm-3 offset-sm-1" id="monographs">
                 <div class="title">Monographs</div>
                 <a href="#" class="item">
                     <div class="image">
@@ -116,8 +117,8 @@
                     </div>
                 </a>
             </div>
-            <div class="col-sm-3 offset-sm-1">
-                <div class="title">Monographs</div>
+            <div class="col-sm-3 offset-sm-1" id="special-books">
+                <div class="title">Special Books</div>
                 <a href="#" class="item">
                     <div class="image">
                         <img src="/focchi/img/library/lib-3.jpg">

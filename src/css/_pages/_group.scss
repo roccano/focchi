@@ -1,0 +1,128 @@
+.section--group-intro {
+    padding: 80px 0 300px;
+    background-position: center;
+    background-size: cover;
+    [data-scroll] {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        &.is-inview {
+            opacity: 1;
+        }
+    }
+    .title {
+        color: $dark;
+        font-family: $font-primary;
+        font-size: 48px;
+        @include media-breakpoint-down(sm) {
+            font-size: 32px;
+        }
+    }
+    .text {
+        color: $dark;
+        font-size: 36px;
+        line-height: 60px;
+    }
+}
+
+.section--point-success {
+    padding: 0px 0 300px;
+    background: #E9E9E9;
+    background-position: center;
+    background-size: cover;
+    @include media-breakpoint-down(sm) {
+        padding: 0 0 100px;
+    }
+    @include media-breakpoint-down(xs) {
+        padding: 0 0 50px;
+    }
+    [data-scroll] {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        &.is-inview {
+            opacity: 1;
+        }
+    }
+    .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .full-width {
+        display: flex;
+        justify-content: center;
+        margin-top: -150px;
+        margin-bottom: 150px;
+    }
+    .tit-section {
+        color: $grey;
+    }
+    .text {
+        color: $grey;
+    }
+}
+
+.section--history {
+    background: #BEBEBF;
+    padding: 0;
+    .swiper-container {
+        padding: 0;
+    }
+    .swiper-slide {
+        .row {
+            align-items: flex-end;
+        }
+        .title {
+            color: #fff;
+            font-size: 80px;
+            padding-bottom: 70px;
+        }
+        .text {
+            color: #fff;
+            font-size: 36px;
+            line-height: 60px;
+        }
+        img {
+            margin-top: -150px;
+        }
+    }
+    .swiper-pagination {
+        position: static;
+        border-top: 1px solid #fff;
+        padding: 20px 0;
+        margin-top: 100px;
+    }
+    .swiper-pagination-bullet {
+        padding: 0;
+        margin: 0 30px;
+        border-radius: 0;
+        width: auto;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        color: #fff;
+        height: 0;
+        opacity: 1;
+        background: transparent;
+    }
+    .swiper-pagination-bullet-active {
+        color: #28292B;
+    }
+}
+
+.section--partner {
+    padding: 150px 0;
+    @include media-breakpoint-down(sm) {
+        padding: 100px 0;
+    }
+    @include media-breakpoint-down(xs) {
+        padding: 50px 0;
+    }
+    .text {
+        color: $grey;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    img {
+        width: 100%;
+    }
+}

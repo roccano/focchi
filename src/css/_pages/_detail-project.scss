@@ -1,6 +1,5 @@
 .section--project-spec {
     padding: 80px 0;
-    background: url("/focchi/img/stripes.png");
     background-position: center;
     background-size: cover;
     [data-scroll] {
@@ -36,7 +35,6 @@
 
 .section--project-2-img {
     padding: 150px 0;
-    background: url("/focchi/img/stripes.png");
     background-position: center;
     background-size: cover;
     @include media-breakpoint-down(sm) {
@@ -129,7 +127,7 @@
 }
 
 .section--project-designer {
-    background: url("/focchi/img/stripes.png") #bebebf;
+    background: #bebebf;
     background-position: center;
     background-size: cover;
     padding: 0 0 150px;

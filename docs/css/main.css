@@ -5517,7 +5517,6 @@ ul {
 
 .section--project-spec {
   padding: 80px 0;
-  background: url("/focchi/img/stripes.png");
   background-position: center;
   background-size: cover; }
   .section--project-spec [data-scroll] {
@@ -5548,7 +5547,6 @@ ul {
 
 .section--project-2-img {
   padding: 150px 0;
-  background: url("/focchi/img/stripes.png");
   background-position: center;
   background-size: cover; }
   @media (max-width: 1023.98px) {
@@ -5641,7 +5639,7 @@ ul {
       color: #fff; }
 
 .section--project-designer {
-  background: url("/focchi/img/stripes.png") #bebebf;
+  background: #bebebf;
   background-position: center;
   background-size: cover;
   padding: 0 0 150px; }
@@ -5923,6 +5921,124 @@ ul {
     .section--content-library .text p:first-child {
       margin-top: 0; }
   .section--content-library img {
+    width: 100%; }
+
+.section--group-intro {
+  padding: 80px 0 300px;
+  background-position: center;
+  background-size: cover; }
+  .section--group-intro [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out; }
+    .section--group-intro [data-scroll].is-inview {
+      opacity: 1; }
+  .section--group-intro .title {
+    color: #28292B;
+    font-family: "sofia-pro", sans-serif;
+    font-size: 48px; }
+    @media (max-width: 1023.98px) {
+      .section--group-intro .title {
+        font-size: 32px; } }
+  .section--group-intro .text {
+    color: #28292B;
+    font-size: 36px;
+    line-height: 60px; }
+
+.section--point-success {
+  padding: 0px 0 300px;
+  background: #E9E9E9;
+  background-position: center;
+  background-size: cover; }
+  @media (max-width: 1023.98px) {
+    .section--point-success {
+      padding: 0 0 100px; } }
+  @media (max-width: 767.98px) {
+    .section--point-success {
+      padding: 0 0 50px; } }
+  .section--point-success [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out; }
+    .section--point-success [data-scroll].is-inview {
+      opacity: 1; }
+  .section--point-success .col-md-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .section--point-success .full-width {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -150px;
+    margin-bottom: 150px; }
+  .section--point-success .tit-section {
+    color: #707070; }
+  .section--point-success .text {
+    color: #707070; }
+
+.section--history {
+  background: #BEBEBF;
+  padding: 0; }
+  .section--history .swiper-container {
+    padding: 0; }
+  .section--history .swiper-slide .row {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .section--history .swiper-slide .title {
+    color: #fff;
+    font-size: 80px;
+    padding-bottom: 70px; }
+  .section--history .swiper-slide .text {
+    color: #fff;
+    font-size: 36px;
+    line-height: 60px; }
+  .section--history .swiper-slide img {
+    margin-top: -150px; }
+  .section--history .swiper-pagination {
+    position: static;
+    border-top: 1px solid #fff;
+    padding: 20px 0;
+    margin-top: 100px; }
+  .section--history .swiper-pagination-bullet {
+    padding: 0;
+    margin: 0 30px;
+    border-radius: 0;
+    width: auto;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: #fff;
+    height: 0;
+    opacity: 1;
+    background: transparent; }
+  .section--history .swiper-pagination-bullet-active {
+    color: #28292B; }
+
+.section--partner {
+  padding: 150px 0; }
+  @media (max-width: 1023.98px) {
+    .section--partner {
+      padding: 100px 0; } }
+  @media (max-width: 767.98px) {
+    .section--partner {
+      padding: 50px 0; } }
+  .section--partner .text {
+    color: #707070;
+    font-size: 18px;
+    line-height: 40px; }
+  .section--partner img {
     width: 100%; }
 
 .section--nav-page {
