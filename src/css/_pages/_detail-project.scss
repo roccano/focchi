@@ -270,6 +270,13 @@
             }
         }
     }
+    .tit-section {
+        color: #fff;
+    }
+    .btn--link {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
     .cta {
         text-align: right;
         @include media-breakpoint-down(xs) {

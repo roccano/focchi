@@ -3237,6 +3237,61 @@ strong {
           font-size: 32px;
           line-height: 42px; } }
 
+.section--hero.hero-detail-library {
+  position: relative;
+  height: 70vh; }
+  .section--hero.hero-detail-library .caption {
+    position: relative;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px; }
+    @media (max-width: 767.98px) {
+      .section--hero.hero-detail-library .caption {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        padding: 30px 30px 60px 30px; } }
+    .section--hero.hero-detail-library .caption .title {
+      font-size: 48px;
+      line-height: 60px; }
+      @media (max-width: 767.98px) {
+        .section--hero.hero-detail-library .caption .title {
+          font-size: 32px;
+          line-height: 42px; } }
+  .section--hero.hero-detail-library .navigation {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+    padding: 20px 30px; }
+    .section--hero.hero-detail-library .navigation a {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+      display: block; }
+    .section--hero.hero-detail-library .navigation .icon--dropdown {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      stroke: #fff;
+      position: relative;
+      top: 2px;
+      margin-right: 20px; }
+
 .section--hero-secondary .container {
   padding-bottom: 90px; }
 
@@ -5708,6 +5763,11 @@ ul {
     @media (max-width: 767.98px) {
       .section--more-projects .row .col-sm-6 {
         padding-bottom: 20px; } }
+  .section--more-projects .tit-section {
+    color: #fff; }
+  .section--more-projects .btn--link {
+    color: #fff;
+    border-bottom: 2px solid #fff; }
   .section--more-projects .cta {
     text-align: right; }
     @media (max-width: 767.98px) {
@@ -5741,6 +5801,129 @@ ul {
       font-size: 32px; } }
   .tit-section.light {
     color: #fff; }
+
+.section--intro-detail-library {
+  padding: 150px 0; }
+  @media (max-width: 1023.98px) {
+    .section--intro-detail-library {
+      padding: 100px 0; } }
+  @media (max-width: 767.98px) {
+    .section--intro-detail-library {
+      padding: 50px 0; } }
+  .section--intro-detail-library .text {
+    font-size: 36px;
+    color: #707070; }
+    @media (max-width: 1439.98px) {
+      .section--intro-detail-library .text {
+        font-size: 24px; } }
+    @media (max-width: 767.98px) {
+      .section--intro-detail-library .text {
+        padding-bottom: 50px; } }
+  .section--intro-detail-library .item-library .image img {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19); }
+  .section--intro-detail-library .item-library .title {
+    color: #28292B;
+    font-size: 28px;
+    line-height: 32px;
+    padding: 30px 0 15px; }
+    @media (max-width: 1023.98px) {
+      .section--intro-detail-library .item-library .title {
+        font-size: 24px;
+        line-height: 28px; } }
+  .section--intro-detail-library .item-library .text {
+    font-size: 18px;
+    line-height: 32px;
+    color: #707070; }
+    @media (max-width: 1023.98px) {
+      .section--intro-detail-library .item-library .text {
+        font-size: 16px;
+        line-height: 30px; } }
+    .section--intro-detail-library .item-library .text span {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+      text-transform: uppercase; }
+      @media (max-width: 1023.98px) {
+        .section--intro-detail-library .item-library .text span {
+          display: block; } }
+      .section--intro-detail-library .item-library .text span:first-child {
+        padding-right: 10px; }
+        @media (max-width: 1023.98px) {
+          .section--intro-detail-library .item-library .text span:first-child {
+            padding-right: 0; } }
+
+.section--slide-library {
+  background: url("/focchi/img/stripes.png") #fff;
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0 0; }
+  @media (max-width: 1023.98px) {
+    .section--slide-library {
+      padding: 100px 0 0; } }
+  @media (max-width: 767.98px) {
+    .section--slide-library {
+      padding: 50px 0 0; } }
+  .section--slide-library [data-scroll] {
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out; }
+    .section--slide-library [data-scroll].is-inview {
+      opacity: 1; }
+  .section--slide-library .slide-live-project {
+    padding: 100px 0 0; }
+    @media (max-width: 1023.98px) {
+      .section--slide-library .slide-live-project {
+        padding: 50px 0 0; } }
+    .section--slide-library .slide-live-project .item {
+      padding: 0 30px;
+      outline: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+      .section--slide-library .slide-live-project .item img {
+        width: 100%;
+        max-width: 100%; }
+  .section--slide-library .text {
+    font-size: 36px;
+    color: #707070; }
+    @media (max-width: 1023.98px) {
+      .section--slide-library .text {
+        font-size: 24px; } }
+    .section--slide-library .text span {
+      color: #28292B; }
+  .section--slide-library .small-text {
+    font-size: 18px;
+    color: #707070; }
+    @media (max-width: 1023.98px) {
+      .section--slide-library .small-text {
+        padding-top: 100px; } }
+    @media (max-width: 767.98px) {
+      .section--slide-library .small-text {
+        padding-top: 50px; } }
+    .section--slide-library .small-text span {
+      color: #28292B; }
+
+.section--content-library {
+  padding: 150px 0; }
+  @media (max-width: 1023.98px) {
+    .section--content-library {
+      padding: 100px 0; } }
+  @media (max-width: 767.98px) {
+    .section--content-library {
+      padding: 50px 0; } }
+  .section--content-library .text {
+    color: #707070;
+    font-size: 18px;
+    line-height: 32px; }
+    @media (max-width: 767.98px) {
+      .section--content-library .text {
+        padding-top: 50px; } }
+    .section--content-library .text p:first-child {
+      margin-top: 0; }
+  .section--content-library img {
+    width: 100%; }
 
 .section--nav-page {
   padding: 30px 80px;
