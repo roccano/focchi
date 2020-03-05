@@ -129,6 +129,13 @@ html:not(.has-scroll-init) {
   overflow: hidden;
   height: 100%; }
 
+[data-scroll] {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; }
+  [data-scroll].is-inview {
+    opacity: 1; }
+
 body {
   font-family: "sofia-pro", sans-serif;
   font-weight: 300;
@@ -4038,7 +4045,7 @@ ul {
 
 .section--listing {
   padding: 100px 0;
-  background: url("/focchi/img/stripes.png") #fff; }
+  background: #fff; }
   .section--listing .item {
     padding-bottom: 50px;
     display: block; }
@@ -4107,7 +4114,8 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background: #28292B;
-    padding: 0 30px; }
+    padding: 0 30px;
+    position: relative; }
     .section--filters .wrap-lv-1 .item ul {
       list-style: none;
       margin: 0;
@@ -4296,13 +4304,13 @@ ul {
     transition: opacity .3s ease-in-out; }
 
 .section--load-more-projects {
-  background: url("/focchi/img/stripes.png") #bebebf;
+  background: #bebebf;
   padding: 50px 0;
   text-align: center; }
 
 .section--full-img {
   padding: 80px 0;
-  background: url("/focchi/img/stripes.png") #fff;
+  background: #fff;
   background-position: center;
   background-size: cover; }
   @media (max-width: 1023.98px) {
@@ -4311,27 +4319,15 @@ ul {
   @media (max-width: 767.98px) {
     .section--full-img {
       padding-bottom: 100px; } }
-  .section--full-img [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--full-img [data-scroll].is-inview {
-      opacity: 1; }
 
 .section--two-img {
   padding: 80px 0;
-  background: url("/focchi/img/stripes.png") #fff;
+  background: #fff;
   background-position: center;
   background-size: cover; }
   @media (max-width: 1023.98px) {
     .section--two-img {
       padding: 0; } }
-  .section--two-img [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--two-img [data-scroll].is-inview {
-      opacity: 1; }
   .section--two-img .row .col-md-6 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4345,18 +4341,12 @@ ul {
 
 .section--two-text {
   padding: 80px 0;
-  background: url("/focchi/img/stripes.png") #fff;
+  background: #fff;
   background-position: center;
   background-size: cover; }
   @media (max-width: 767.98px) {
     .section--two-text {
       padding-bottom: 50px; } }
-  .section--two-text [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--two-text [data-scroll].is-inview {
-      opacity: 1; }
   .section--two-text .text-box {
     margin-bottom: 100px;
     color: #28292B;
@@ -4374,15 +4364,9 @@ ul {
 
 .section--full-text {
   padding: 80px 0;
-  background: url("/focchi/img/stripes.png") #fff;
+  background: #fff;
   background-position: center;
   background-size: cover; }
-  .section--full-text [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--full-text [data-scroll].is-inview {
-      opacity: 1; }
   .section--full-text .text-box {
     margin-bottom: 100px;
     color: #28292B;
@@ -5519,12 +5503,6 @@ ul {
   padding: 80px 0;
   background-position: center;
   background-size: cover; }
-  .section--project-spec [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--project-spec [data-scroll].is-inview {
-      opacity: 1; }
   .section--project-spec .title {
     color: #28292B;
     font-family: "sofia-pro", sans-serif;
@@ -5552,12 +5530,6 @@ ul {
   @media (max-width: 1023.98px) {
     .section--project-2-img {
       padding: 100px 0; } }
-  .section--project-2-img [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--project-2-img [data-scroll].is-inview {
-      opacity: 1; }
   .section--project-2-img .row {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -5580,15 +5552,9 @@ ul {
 .section--project-technology {
   padding: 300px 0;
   margin-top: -300px;
-  background: url("/focchi/img/stripes.png") #e9e9e9;
+  background: #e9e9e9;
   background-position: center;
   background-size: cover; }
-  .section--project-technology [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--project-technology [data-scroll].is-inview {
-      opacity: 1; }
   .section--project-technology .row {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -5605,7 +5571,7 @@ ul {
 
 .section--project-process {
   padding: 0px 0 150px;
-  background: url("/focchi/img/stripes.png") #bebebf;
+  background: #bebebf;
   background-position: center;
   background-size: cover; }
   @media (max-width: 1023.98px) {
@@ -5614,12 +5580,6 @@ ul {
   @media (max-width: 767.98px) {
     .section--project-process {
       padding: 0 0 50px; } }
-  .section--project-process [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--project-process [data-scroll].is-inview {
-      opacity: 1; }
   .section--project-process .full-width {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5646,12 +5606,6 @@ ul {
   @media (max-width: 1023.98px) {
     .section--project-designer {
       padding: 0 0 100px; } }
-  .section--project-designer [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--project-designer [data-scroll].is-inview {
-      opacity: 1; }
   @media (max-width: 1439.98px) {
     .section--project-designer .tit-section {
       padding-bottom: 30px; } }
@@ -5676,7 +5630,7 @@ ul {
       color: #e3e3e3; }
 
 .section--project-live-project {
-  background: url("/focchi/img/stripes.png") #fff;
+  background: #fff;
   background-position: center;
   background-size: cover;
   padding: 150px 0; }
@@ -5686,12 +5640,6 @@ ul {
   @media (max-width: 767.98px) {
     .section--project-live-project {
       padding: 100px 0 0; } }
-  .section--project-live-project [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--project-live-project [data-scroll].is-inview {
-      opacity: 1; }
   .section--project-live-project .slide-live-project {
     padding: 100px 0; }
     @media (max-width: 1023.98px) {
@@ -5726,34 +5674,22 @@ ul {
       color: #28292B; }
 
 .section--project-other {
-  background: url("/focchi/img/stripes.png") #fff;
+  background: #fff;
   background-position: center;
   background-size: cover;
   padding: 150px 0 0; }
   @media (max-width: 1023.98px) {
     .section--project-other {
       padding: 100px 0 0; } }
-  .section--project-other [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--project-other [data-scroll].is-inview {
-      opacity: 1; }
 
 .section--more-projects {
-  background: url("/focchi/img/stripes.png") #bebebf;
+  background: #bebebf;
   background-position: center;
   background-size: cover;
   padding: 150px 0; }
   @media (max-width: 1023.98px) {
     .section--more-projects {
       padding: 100px 0; } }
-  .section--more-projects [data-scroll] {
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    .section--more-projects [data-scroll].is-inview {
-      opacity: 1; }
   .section--more-projects .row {
     -webkit-box-align: end;
         -ms-flex-align: end;

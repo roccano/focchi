@@ -1,17 +1,10 @@
 .section--two-text {
     padding: 80px 0;
-    background: url("/focchi/img/stripes.png") #fff;
+    background: #fff;
     background-position: center;
     background-size: cover;
     @include media-breakpoint-down(xs) {
         padding-bottom: 50px;
-    }
-    [data-scroll] {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        &.is-inview {
-            opacity: 1;
-        }
     }
     .text-box {
         margin-bottom: 100px;

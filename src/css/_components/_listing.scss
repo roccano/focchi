@@ -1,6 +1,6 @@
 .section--listing {
     padding: 100px 0;
-    background: url("/focchi/img/stripes.png") #fff;
+    background: #fff;
     .item {
         padding-bottom: 50px;
         display: block;
@@ -78,6 +78,7 @@
         justify-content: space-between;
         background: $dark;
         padding: 0 30px;
+        position: relative;
         .item {
             ul {
                 list-style: none;
@@ -310,7 +311,7 @@
 }
 
 .section--load-more-projects {
-    background: url("/focchi/img/stripes.png") #bebebf;
+    background: #bebebf;
     padding: 50px 0;
     text-align: center;
 }

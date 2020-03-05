@@ -115,3 +115,11 @@ html:not(.has-scroll-init) {
     overflow: hidden;
     height: 100%;
 }
+
+[data-scroll] {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    &.is-inview {
+        opacity: 1;
+    }
+}

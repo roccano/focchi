@@ -214,6 +214,8 @@ import LocomotiveScroll from "locomotive-scroll";
 
     }
 
+
+
     window.onload = function() {
         //initialize swiper when document ready
         var mySwiper = new Swiper('.swiper-container', {
@@ -290,6 +292,7 @@ import LocomotiveScroll from "locomotive-scroll";
         projectsFilters();
         hoverImage();
         anchorLink();
+        showMoreLibrary();
     }, 500);
 
 

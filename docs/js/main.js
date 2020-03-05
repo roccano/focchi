@@ -291,6 +291,7 @@
         projectsFilters();
         hoverImage();
         anchorLink();
+        showMoreLibrary();
       }, 500);
     })();
 
