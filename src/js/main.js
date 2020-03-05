@@ -255,8 +255,9 @@ import LocomotiveScroll from "locomotive-scroll";
                 clickable: true,
                 renderBullet: function(index, className) {
                     return '<span class="' + className + '">' + (menu[index]) + '</span>';
-                },
+                }
             },
+
             breakpoints: {
                 // when window width is >= 320px
                 320: {
@@ -290,5 +291,7 @@ import LocomotiveScroll from "locomotive-scroll";
         hoverImage();
         anchorLink();
     }, 500);
+
+
 
 })();
