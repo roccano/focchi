@@ -214,6 +214,12 @@ import LocomotiveScroll from "locomotive-scroll";
 
     }
 
+    function menuFilters() {
+        $(".menu-filtri a").click(function() {
+            $('.wrap-lv-1 li').toggleClass('open');
+        });
+    }
+
 
 
     window.onload = function() {
@@ -292,7 +298,7 @@ import LocomotiveScroll from "locomotive-scroll";
         projectsFilters();
         hoverImage();
         anchorLink();
-        showMoreLibrary();
+        menuFilters();
     }, 500);
 
 

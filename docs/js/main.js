@@ -217,6 +217,12 @@
         });
       }
 
+      function menuFilters() {
+        $(".menu-filtri a").click(function () {
+          $('.wrap-lv-1 li').toggleClass('open');
+        });
+      }
+
       window.onload = function () {
         //initialize swiper when document ready
         var mySwiper = new Swiper('.swiper-container', {
@@ -291,7 +297,7 @@
         projectsFilters();
         hoverImage();
         anchorLink();
-        showMoreLibrary();
+        menuFilters();
       }, 500);
     })();
 
